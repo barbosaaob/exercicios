@@ -1,0 +1,202 @@
+\documentclass{article}
+
+\usepackage[inline]{enumitem}
+
+\begin{document}
+\noindent{}\rule{\textwidth}{0.4pt}
+\begin{center}
+	\'{A}lgebra Linear\\
+	Lista 1 --- Matrizes e sistemas lineares \\
+	\vspace{0.2cm}
+	Prof. Adriano Barbosa
+\end{center}
+\noindent{}\rule{\textwidth}{0.4pt}
+
+\begin{enumerate}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item Sejam
+
+$A = \left[
+\begin{array}{ccc}
+	1 & 2 & 3 \\
+	2 & 1 & -1
+\end{array}\right]$,
+$B = \left[
+\begin{array}{ccc}
+	-2 & 0 & 1 \\
+	3 & 0 & 1
+\end{array}\right]$,
+$C = \left[
+\begin{array}{c}
+	-1 \\ 2 \\ 4
+\end{array}\right]$ e
+$D = \left[
+\begin{array}{cc}
+	2 & 1
+\end{array}\right]$
+
+Encontre:
+
+\begin{enumerate*}[label=\alph*.]
+	\item $A + B$ \hfill{}
+	\item $AC$ \hfill{}
+	\item $BC$ \hfill{}
+	\item $CD$ \hfill{}
+	\item $DA$ \hfill{}
+	\item $DB$ \hfill{}
+	\item $-A$ \hfill{}
+	\item $-D$
+\end{enumerate*}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item Seja
+$A = \left[
+\begin{array}{cc}
+	2 & x^2 \\
+	2x-1 & 0
+\end{array}\right]$.
+Se $A^T = A$, qual o valor de $x$?
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item Verdadeiro ou falso?
+
+\begin{enumerate}[label=\alph*.]
+	\item ${(-A)}^T = -{(A)}^T$
+	\item ${(A + B)}^T = B^T + A^T$
+	\item Se $AB = 0$, ent\~ao $A = 0$ ou $B = 0$.
+	\item ${(k_1A)}{(k_2B)} = {(k_1k_2)}AB$
+	\item ${(-A)}{(-B)} = -{(AB)}$
+	\item Se $A$ e $B$ s\~ao matrizes sim\'etricas, ent\~ao $AB = BA$.
+	\item Se $AB = 0$, ent\~ao $BA = 0$.
+	\item Se podemos efetuar o produto $AA$, ent\~ao $A$ \'e uma matriz quadrada.
+\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item Ache $x$, $y$, $z$ e $w$ se
+$\left[\begin{array}{cc}
+	x & y \\
+	z & w
+\end{array}\right]
+\left[\begin{array}{cc}
+	2 & 3 \\
+	3 & 4
+\end{array}\right] = 
+\left[\begin{array}{cc}
+	1 & 0 \\
+	0 & 1
+\end{array}\right]$.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item Suponha que $A \neq{} 0$ e $AB = AC$ onde $A$, $B$ e $C$ s\~ao
+matrizes tais que a multiplica\c{c}\~ao seja poss\'ivel.
+
+\begin{enumerate}[label=\alph*.]
+	\item $B = C$?
+	\item Se existir uma matriz $Y$, tal que $YA = I$, onde $I$ \'e a matriz
+		identidade, ent\~ao $B = C$?
+\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item Resolva o sistema de equa\c{c}\~oes, escrevendo as matrizes aumentadas,
+	associadas aos novos sistemas
+
+$\left\{
+\begin{array}{ccccccc}
+	2x & - & y & + & 3z & = & 11 \\
+	4x & - & 3y & + & 2z & = & 0 \\
+	x & + & y & + & z & = & 6 \\
+	3x & + & y & + & z & = & 4
+\end{array}
+\right.$
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item Reduza as matrizes \`a forma escalonada
+
+\begin{enumerate*}[label=\alph*.]
+	\item
+		$\left[\begin{array}{cccc}
+			1 & -2 & 3 & -1 \\
+			2 & -1 & 2 & 3 \\
+			3 & 1 & 2 & 3
+		\end{array}\right]$
+	\item
+		$\left[\begin{array}{ccc}
+			0 & 2 & 2 \\
+			1 & 1 & 3 \\
+			3 & -4 & 2 \\
+			2 & -3 & 1
+		\end{array}\right]$
+	\item
+		$\left[\begin{array}{cccc}
+			0 & 1 & 3 & -2 \\
+			2 & 1 & -4 & 3 \\
+			2 & 3 & 2 & -1
+		\end{array}\right]$
+\end{enumerate*}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item Calcule o posto das matrizes da quest\~ao anterior.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item Determine $k$, para que o sistema admita solu\c{c}\~ao
+
+$\left\{\begin{array}{ccccc}
+	-4x & + & 3y & = & 2 \\
+	5x & - & 4y & = & 0 \\
+	2x & - & y & = & k
+\end{array}\right.$
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item Determinar os valores de $a$ e $b$ de modo que o sistema
+
+$\left\{\begin{array}{ccccl}
+	3x & - & 7y & = & a \\
+	x & + & y & = & b \\
+	5x & + & 3y & = & 5a + 2b \\
+	x & + & 2y & = & a + b -1
+\end{array}\right.$
+
+possua uma \'unica solu\c{c}\~ao. Em seguida resolver o sistema.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item Foram estudados tr\^es tipos de alimentos. Fixada a mesma quantidade (1g)
+	determinou-se que:
+
+\begin{enumerate}[label=\roman*.]
+	\item O alimento I tem 1 unidade de vitamina A, 3 unidades de vitamina B e
+		4 unidades de vitamina C.
+	\item O alimento II tem 2, 3 e 5 unidades respectivamente, das vitaminas A,
+		B e C.
+	\item O alimento III tem 3 unidades de vitaminas A e C, e n\~ao cont\'em
+		vitamina B.
+\end{enumerate}
+
+Se s\~ao necess\'arias 11 unidades de vitamina A, 9 de vitamina B e 20 de vitamina C,
+
+\begin{enumerate}[label=\alph*.]
+	\item Encontre todas as poss\'iveis quantidades dos alimentos I, II e III,
+		que fornecem a quantidade de vitaminas desejada.
+	\item Se o alimento I custa R\$~0,60 por grama e os outros dois custam
+		R\$~0,10, existe uma solu\c{c}\~ao custando exatamente R\$~1,00?
+\end{enumerate}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item Sendo
+$A = \left[\begin{array}{cc}
+	1 & 0 \\
+	0 & 2
+\end{array}\right]$ e 
+$B = \left[\begin{array}{cc}
+	4 & 0 \\
+	0 & 2
+\end{array}\right]$,
+determine as matrizes $X_{2\times{} 2}$ e $Y_{2\times{} 2}$ tais que 
+
+$\left\{\begin{array}{ccccl}
+	2X & - & Y & = & A + B \\
+	X & + & Y & = & A - B
+\end{array}\right.$
+
+\end{enumerate}
+\end{document}
