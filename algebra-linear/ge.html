@@ -19,6 +19,8 @@
 					var $result = document.getElementById("result");
 					while ($result.firstChild)
 						$result.removeChild($result.firstChild);
+					while ($process.firstChild)
+						$process.removeChild($process.firstChild);
 				}
 			}
 
@@ -38,7 +40,7 @@
 						var $f = document.createElement("input");
 						$f.size = 4;
 						$f.id = "entry_" + String(id);
-						// $f.value = id + 1;  // debug
+						$f.value = id + 1;  // debug
 						$matrix.appendChild($f);
 					}
 					var $br = document.createElement("br");
@@ -54,6 +56,10 @@
 			}
 
 			function setMatrix() {
+				var $process = document.getElementById("process");
+				while ($process.firstChild)
+					$process.removeChild($process.firstChild);
+
 				var A = Array();
 				var validMatrix = true;
 				for (var i = 0; i < nrows; i++) {
@@ -78,15 +84,8 @@
 				}
 			}
 
-			function drawResult(A) {
-				var $result = document.getElementById("result");
-				while ($result.firstChild)
-					$result.removeChild($result.firstChild);
-
-				var $t = document.createTextNode("Resultado:");
-				var $p = document.createElement("p");
-				$p.appendChild($t);
-				$result.appendChild($p);
+			function drawMatrix(A, $e) {
+				var $extTable = document.createElement("table");
 
 				var $table = document.createElement("table");
 				for (var i = 0; i < nrows; i++) {
@@ -99,14 +98,34 @@
 					}
 					$table.appendChild($tr);
 				}
-				$result.appendChild($table);
+				$e.appendChild($table);
+			}
+
+			function drawResult(A) {
+				var $result = document.getElementById("result");
+				while ($result.firstChild)
+					$result.removeChild($result.firstChild);
+
+				var $t = document.createTextNode("Resultado:");
+				var $p = document.createElement("p");
+				$p.appendChild($t);
+				$result.appendChild($p);
+
+				drawMatrix(A, $result);
 			}
 
 			function GE(A, eps) {
 				if (!eps)
 					eps = 1e-8;
 
+				$process = document.getElementById("process");
+				$t = document.createTextNode("Processo:");
+				$p = document.createElement("p");
+				$p.appendChild($t);
+				$process.appendChild($p);
+
 				console.log("initial: " + A);
+				drawMatrix(A, $process);
 				for (var k = 0; k < Math.min(nrows, ncols) - 1; k++) {
 					if (Math.abs(A[k * ncols + k]) < eps) {
 						// Find the k-th pivot
@@ -120,6 +139,7 @@
 						if (idx) {
 							A = swapRows(A, k, idx);
 							console.log("L_" + String(idx+1) + " <--> L_" + String(k+1));
+							drawMatrix(A, $process);
 							console.log("after: " + A);
 						} else {
 							continue;
@@ -142,6 +162,7 @@
 						A[i * ncols + k] = 0.0;
 					}
 
+					drawMatrix(A, $process);
 					console.log("after: " + A);
 				}
 
@@ -160,9 +181,25 @@
 		<style>
 			#result table {
 				width: 100%;
+				border-left: thin solid black;
+				border-right: thin solid black;
 			}
 			#result td {
 				text-align: center;
+			}
+			#process table {
+				width: 100%;
+				border-left: thin solid black;
+				border-right: thin solid black;
+			}
+			#process td {
+				text-align: center;
+			}
+			div {
+				width: 50%;
+			}
+			table {
+				margin-bottom: 10px;
 			}
 		</style>
 	</head>
@@ -170,9 +207,11 @@
 		<p>Qual o tamanho da matriz?</p>
 		<input type="number" id="nrows"> x <input type="number" id="ncols">
 		<button onclick="setMatrixSize();">OK</button><br>
-		<div id="matrix" style="width: 45%; position: absolute;">
+		<div id="matrix">
 		</div>
-		<div id="result" style="width: 45%; position: absolute; left: 50%;">
+		<div id="result">
+		</div>
+		<div id="process">
 		</div>
 	</body>
 </html>
