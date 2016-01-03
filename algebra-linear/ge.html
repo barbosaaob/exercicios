@@ -4,37 +4,74 @@
 		<meta charset="utf-8">
 		<title>Eliminação de Gauss</title>
 		<script>
+			/*
+				Matrix number of rows and columns.
+			 */
 			var nrows, ncols;
 
+			/*
+			   Set global variables for number of rows and columns.
+			   Called by first "ok" button on the page.
+			 */
 			function setMatrixSize() {
+				// get number of rows and columns
 				var $nrows = parseInt(document.getElementById("nrows").value);
 				var $ncols = parseInt(document.getElementById("ncols").value);
 
+				// check for valid number of rows and columns
 				if ( (isNaN($nrows)) || (isNaN($ncols)) || ($nrows < 1) || ($ncols < 1) ) {
 					alert("Por favor, entre com um número de linhas e colunas válido.");
 				} else {
+					// set nrows and ncols
 					nrows = $nrows;
 					ncols = $ncols;
+					// draw empty matrix to be fed
 					drawMatrixFields();
+
+					// clean result div
 					var $result = document.getElementById("result");
 					while ($result.firstChild)
 						$result.removeChild($result.firstChild);
+
+					// clean process div
 					var $process = document.getElementById("process");
 					while ($process.firstChild)
 						$process.removeChild($process.firstChild);
 				}
 			}
 
+			/*
+			   Populate matrix div. Draw matrix to be fed.
+
+			   A complete matrix is a table (extTable) where first column
+			   contains left matrix delimiter, central column contains the
+			   matrix itself and right column contains right matrix delimiter.
+			 */
 			function drawMatrixFields() {
+				// get matrix div and clean it
 				var $matrix = document.getElementById("matrix");
 				while ($matrix.firstChild)
 					$matrix.removeChild($matrix.firstChild);
 
+				// message to the user
 				var $p = document.createElement("p");
 				var $t = document.createTextNode("Entre com os valores da matriz:");
 				$p.appendChild($t);
 				$matrix.appendChild($p);
 
+				// start matrix drawing, left delimiter
+				var $extTable = document.createElement("table");
+				$extTable.id = "ext-table";
+				var $extTr = document.createElement("tr");
+				var $extTd = document.createElement("td");
+				$extTd.style.width = 5 + "px";
+				$extTd.style.borderLeft = "thin solid";
+				$extTd.style.borderTop = "thin solid";
+				$extTd.style.borderBottom = "thin solid";
+				$extTr.appendChild($extTd);
+
+				// draw the matrix itself, center of the "external table"
+				var $interiorMatrix = document.createElement("div");
 				for (var i = 0; i < nrows; i++) {
 					for (var j = 0; j < ncols; j++) {
 						var id = i * ncols + j;
@@ -42,25 +79,45 @@
 						$f.size = 4;
 						$f.id = "entry_" + String(id);
 						$f.value = id + 1;  // debug
-						$matrix.appendChild($f);
+						$interiorMatrix.appendChild($f);
 					}
 					var $br = document.createElement("br");
-					$matrix.appendChild($br);
+					$interiorMatrix.appendChild($br);
 				}
+				// draw right matrix delimiter, finished matrix drawing
+				$extTr.appendChild($interiorMatrix);
+				$extTd = document.createElement("td");
+				$extTd.style.width = 5 + "px";
+				$extTd.style.borderRight = "thin solid";
+				$extTd.style.borderTop = "thin solid";
+				$extTd.style.borderBottom = "thin solid";
+				$extTr.appendChild($extTd);
+				$extTable.appendChild($extTr);
+				$matrix.appendChild($extTable);
+
+				// visual line break
+				$br = document.createElement("br");
+				$matrix.appendChild($br);
+
+				// button to set the matrix
 				var $button = document.createElement("button");
 				$t = document.createTextNode("Calcular Eliminação de Gauss");
 				$button.appendChild($t);
 				$button.addEventListener("click", setMatrix);
 				$matrix.appendChild($button);
-
-				matrixDrawn = true;
 			}
 
+			/*
+			   Set the matrix.
+			   Called by "Calcular Eliminação de Gauss" button.
+			 */
 			function setMatrix() {
+				// get process div and clean it
 				var $process = document.getElementById("process");
 				while ($process.firstChild)
 					$process.removeChild($process.firstChild);
 
+				// verify for valid matrix entry, then store it on A variable
 				var A = Array();
 				var validMatrix = true;
 				for (var i = 0; i < nrows; i++) {
@@ -74,18 +131,31 @@
 						}
 						A[id] = a_ij;
 					}
+
+					// alert the user for invalid matrix entry
 					if (!validMatrix) {
 						alert("Por favor, entre com todos os valures da matriz.");
 						break;
 					}
 				}
+
+				// call Gaussian Elimination
 				if (validMatrix) {
 					GE(A)
 					// console.log(A);
 				}
 			}
 
+			/*
+			   Draw a matrix.
+			   Get a matrix A and an "environment" where it will be placed.
+
+			   A complete matrix is a table (extTable) where first column
+			   contains left matrix delimiter, central column contains the
+			   matrix itself and right column contains right matrix delimiter.
+			 */
 			function drawMatrix(A, $e) {
+				// start matrix drawing, left matrix delimiter
 				var $extTable = document.createElement("table");
 				$extTable.id = "ext-table";
 				var $extTr = document.createElement("tr");
@@ -96,6 +166,7 @@
 				$extTd.style.borderBottom = "thin solid";
 				$extTr.appendChild($extTd);
 
+				// matrix itself
 				var $table = document.createElement("table");
 				for (var i = 0; i < nrows; i++) {
 					var $tr = document.createElement("tr");
@@ -109,66 +180,85 @@
 				}
 				$extTr.appendChild($table);
 
+				// right matrix delimiter, finishes matrix drawing
 				$extTd = document.createElement("td");
 				$extTd.style.width = 5 + "px";
 				$extTd.style.borderRight = "thin solid";
 				$extTd.style.borderTop = "thin solid";
 				$extTd.style.borderBottom = "thin solid";
 				$extTr.appendChild($extTd);
-
 				$extTable.appendChild($extTr);
+
+				// append the matrix to the environment
 				$e.appendChild($extTable);
 			}
 
+			/*
+			   still not working!
+
+			   Write a elementar operation on the process div.
+			   Draw an arrow with a string over it.
+			 */
 			function writeOperation(s) {
+				// get the process div
 				var $process = document.getElementById("process");
 
+				// draw the arrow
 				var $svg = document.createElement("svg");
-
 				var $path = document.createElement("path");
 				$path.setAttribute("d", "M0 5 H50 Z");
 				$path.setAttribute("stroke", "black");
 				$svg.appendChild($path);
-
 				$path = document.createElement("path");
 				$path.setAttribute("d", "M50 10 L50 0 L60 5 Z");
 				$path.setAttribute("stroke", "black");
 				$svg.appendChild($path);
-
 				// var $t = document.createTextNode("Sorry, your browser does not support SVG.");
 				// $svg.appendChild($t);
 
+				// append the arrow 
 				$process.appendChild($svg);
 			}
 
+			/*
+			   Populate result div.
+			   Clean and draw resultant matrix.
+			 */
 			function drawResult(A) {
+				// clean result div
 				var $result = document.getElementById("result");
 				while ($result.firstChild)
 					$result.removeChild($result.firstChild);
 
+				// populate result div, draw resultant matrix
 				var $t = document.createTextNode("Resultado:");
 				var $p = document.createElement("p");
 				$p.appendChild($t);
 				$result.appendChild($p);
-
 				drawMatrix(A, $result);
 			}
 
+			/*
+			   Gaussian Elimination process.
+			 */
 			function GE(A, eps) {
+				// set epsilon tolerance
 				if (!eps)
 					eps = 1e-8;
 
+				// populate process div
 				$process = document.getElementById("process");
 				$t = document.createTextNode("Processo:");
 				$p = document.createElement("p");
 				$p.appendChild($t);
 				$process.appendChild($p);
 
-				// console.log("initial: " + A);
+				// draw initial matrix on process div
 				drawMatrix(A, $process);
+				// console.log("initial: " + A);
 				for (var k = 0; k < Math.min(nrows, ncols) - 1; k++) {
 					if (Math.abs(A[k * ncols + k]) < eps) {
-						// Find the k-th pivot
+						// find the pivot (first non-zero element in column)
 						var idx;
 						for (var i = k; i < nrows; i ++) {
 							if (Math.abs(A[i * ncols + k]) >= eps) {
@@ -176,41 +266,47 @@
 								break;
 							}
 						}
+						// swap rows if necessary
 						if (idx) {
 							A = swapRows(A, k, idx);
-							// console.log("L_" + String(idx+1) + " <--> L_" + String(k+1));
-							// console.log("after: " + A);
 							writeOperation("L_" + String(idx+1) + " <--> L_" + String(k+1));
 							drawMatrix(A, $process);
+							// console.log("L_" + String(idx+1) + " <--> L_" + String(k+1));
+							// console.log("after: " + A);
 						} else {
 							continue;
 						}
 					}
 
-					// Do for all rows below pivot:
+					// do elementar operations for every row below kth row
 					for (var i = k + 1; i < nrows; i++) {
 						var c = - A[i * ncols + k] / A[k * ncols + k];
 						if (c != 0) {
 							var s = "L_" + String(i+1) + " <-- L_" + String(i+1) + " + ("
 							s += String(c) + ") * L_" + String(k+1)
-							// console.log(s);
 							writeOperation(s);
+							// console.log(s);
 						}
-						// Do for all remaining elements in current row
+						// do for all elements in current row
 						for (var j = k + 1; j < ncols; j++)
-						A[i * ncols + j] = A[i * ncols + j] + c * A[k * ncols + j];
+							A[i * ncols + j] = A[i * ncols + j] + c * A[k * ncols + j];
 
-						// Fill lower triangular matrix with zeros:
+						// fill lower triangular matrix with zeros
 						A[i * ncols + k] = 0.0;
 					}
 
-					// console.log("after: " + A);
+					// draw each step on process div
 					drawMatrix(A, $process);
+					// console.log("after: " + A);
 				}
 
+				// draw resultant matrix
 				drawResult(A);
 			}
 
+			/*
+			   Swap rows of a given matrix.
+			 */
 			function swapRows(A, k, l) {
 				for (var j = 0; j < ncols; j++) {
 					var aux = A[k * ncols + j];
