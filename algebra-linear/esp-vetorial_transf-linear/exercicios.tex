@@ -1,0 +1,208 @@
+\documentclass{article}
+
+\usepackage[inline]{enumitem}
+\usepackage{gensymb}
+\usepackage{amssymb}
+
+\begin{document}
+\noindent{}\rule{\textwidth}{0.4pt}
+\begin{center}
+	\'{A}lgebra Linear\\
+	Lista 3 --- Espa\c{c}os vetoriais e transforma\c{c}\~oes lineares \\
+	\vspace{0.2cm}
+	Prof. Adriano Barbosa
+\end{center}
+\noindent{}\rule{\textwidth}{0.4pt}
+
+\begin{enumerate}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item Verifique que s\~ao v\'alidas todas as propriedades de espa\c{c}o vetorial para
+	os vetores $u = (2, 0, -3, 1)$, $v = (4, 0, 3, 5)$ e $w = (1, 6, -2, 1)$
+	juntamente com os escalares $a = 5$ e $b = -3$.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item Verifique se o $\mathbb{R}^2$ \'e fechado com rela\c{c}\~ao as opera\c{c}\~oes dadas
+	\begin{enumerate}
+		\item $(x, y) \oplus (x^{'}, y^{'}) \mapsto (x+x^{'}, y+y^{'})$
+
+			$\alpha\odot(x, y) \mapsto (2\alpha x, 2\alpha y)$
+		\item $(x, y) \oplus (x^{'}, y^{'}) \mapsto (x+x^{'}+1, y+y^{'}+1)$
+
+			$\alpha\odot(x, y) \mapsto (\alpha x, \alpha y)$
+	\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item Dados $u_1 = (-1, 3, 2, 0)$, $u_2 = (2, 0, 4, -1)$, $u_3 = (7, 1, 1, 4)$
+	e $u_4 = (6, 3, 1, 2)$, encontre $a$, $b$, $c$ e $d$ tais que
+	$au_1+bu_2+cu_3+du_4 = (0, 5, 6, -3)$.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item Mostre que n\~ao existem escalares $c_1$, $c_2$ e $c_3$ tais que $c_1(1, 0,
+	1,0) + c_2(1, 0, -2, 1) + c_3(2, 0, 1, 2) = (1, -2, 2, 3)$.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item
+	\begin{enumerate}
+		\item Expresse $(-9, -7, 15)$ e $(7, 8, 9)$ como combina\c{c}\~ao linear de
+			$(2, 1, 4)$, $(3, 2, 5)$ e $(1, -1, 3)$.
+		\item Expresse $-9-7x-15x^2$ e $9x^2+8x+7$ como combina\c{c}\~ao linear de
+			$2+x+4x^2$, $3+2x+5x^2$ e $1-x+3x^2$.
+		\item Expresse
+			$\left[\begin{array}{cc}
+					6 & 0 \\
+					3 & 8
+				\end{array}\right]$
+			como combina\c{c}\~ao linear de
+			$\left[\begin{array}{cc}
+					4 & 0 \\
+					-2 & -2
+				\end{array}\right]$, 
+			$\left[\begin{array}{cc}
+					1 & -1 \\
+					2 & 3
+				\end{array}\right]$ e 
+			$\left[\begin{array}{cc}
+					0 & 2 \\
+					1 & 4
+				\end{array}\right]$
+	\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item Calcule o subespa\c{c}o gerado pelos vetores $\{1+x, x^2, -2\}$.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item Decida se os conjuntos de vetores s\~ao LI ou LD:
+	\begin{enumerate}
+		\item $\{(-1, 2, 4), (5, -10, -20)\}$ em $\mathbb{R}^3$.
+		\item $\{(3, 0, -3, 6), (0, 2, 3, 1), (0, -2, -2, 0), (-2, 1, 2, 1)\}$ em $\mathbb{R}^4$.
+		\item $\{-x^2+6, 4x^2+x+1\}$ em $\mathcal{P}_2$.
+		\item $\left\{
+			\left[\begin{array}{cc}
+				-3 & 4 \\
+				2 & 0
+			\end{array}\right], 
+			\left[\begin{array}{cc}
+				3 & -4 \\
+				-2 & 0
+			\end{array}\right]\right\}$
+		em $M(2, 2)$.
+	\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item Quais dos conjuntos s\~ao base de $\mathcal{P}_2$
+	\begin{enumerate}
+		\item $\{1-3x+2x^2, 1+x+4x^2, 1-7x\}$
+		\item $\{1+x+x^2, x+x^2, x^2\}$
+	\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item Mostre que o conjunto abaixo \'e uma base de $M(2, 2)$
+
+	$\left\{
+		\left[\begin{array}{cc}
+				3 & 6 \\
+				3 & -6
+		\end{array}\right], 
+		\left[\begin{array}{cc}
+				0 & -1 \\
+				-1 & 0
+		\end{array}\right], 
+		\left[\begin{array}{cc}
+				0 & -8 \\
+				-12 & -4
+		\end{array}\right], 
+		\left[\begin{array}{cc}
+				1 & 0 \\
+				-1 & 2
+		\end{array}\right]
+	\right\}$
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item Dado $v = (-2, 3, 0, 6)$, para quais valores de $k$ temos $\|kv\| = 5$.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item Verifique que a desigualdade de Cauchy-Schwarz $\|\langle u, v \rangle\|
+	\le \|u\| \|v\|$ \'e v\'alida para os vetores:
+	\begin{enumerate}
+		\item $u = (3, 2)$ e $v = (4, -1)$
+		\item $u = (-3, 1, 0)$ e $v = (2, -1, 3)$
+		\item $u = (0, -2, 2, 1)$ e $v = (-1, -1, 1, 1)$
+	\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item Verifique que a identidade $A\langle u, v \rangle = vA^Tu$ \'e v\'alida para
+	$A=\left[
+		\begin{array}{cc}
+			2 & -1 \\
+			3 & 4
+		\end{array}\right]$,
+	$u = (3, 1)$ e $v = (-2, 6)$.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item Encontre o dom\'inio e o contradom\'inio das transforma\c{c}\~oes definidas abaixo
+	e determine se elas s\~ao lineares:
+	\begin{enumerate}
+		\item $(x, y, z) \mapsto (3x-2y+4z, 5x-8y+z)$
+		\item $(x_1, x_2, x_3, x_4) \mapsto (x_1^2-3x_2+x_3-2x_4, 3x_1-4x_2-x_3^2+x_4)$
+	\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item Encontre a matriz da transforma\c{c}\~ao linear com rela\c{c}\~ao as bases can\^onicas:
+	\begin{enumerate}
+		\item $T(x, y) = (2x-y, x+y)$
+		\item $T(x, y, z) = (4x, 7y, -8z)$
+	\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item Dadas as matrizes das transforma\c{c}\~oes lineares com rela\c{c}\~ao as bases
+	can\^onicas abaixo, escreva a express\~ao da transforma\c{c}\~ao linear na forma de
+	fun\c{c}\~ao:
+	\begin{enumerate}
+		\item $A = \left[
+				\begin{array}{cc}
+					1 & 2 \\
+					3 & 4
+				\end{array}\right]$
+		\item $A = \left[
+				\begin{array}{ccc}
+					-2 & 1 & 4 \\
+					3 & 5 & 7 \\
+					6 & 0 & -1
+				\end{array}\right]$
+	\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item Combine as matrizes de rota\c{c}\~ao de $30\degree$, $-30\degree$ e $45\degree$ para calcular a matrizes de
+	rota\c{c}\~ao de $15\degree$ e $75\degree$.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item Encontre a matriz da transforma\c{c}\~ao linear resultante de uma expans\~ao de
+	$2$, seguida de uma rota\c{c}\~ao de $45\degree$, seguida de uma reflex\~ao em
+	torno do eixo $x$. Verifique sua resposta transformando o vetor $(1, 1)$,
+	cujo transformado ser\'a $(0, -4)$.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item Calcule o n\'ucleo e a imagem das transforma\c{c}\~oes lineares:
+	\begin{enumerate}
+		\item $T:\mathbb{R}^2\rightarrow\mathbb{R}^2$, $T(x, y) = (4x-2y, 2x-y)$
+		\item $T:\mathbb{R}^3\rightarrow\mathbb{R}^3$, $T(x, y, z) = (x-2y+z, 5x-y+3z, 4x+y+2z)$
+	\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item Determine se a transforma\c{c}\~ao linear associada a matriz
+	$A=\left[\begin{array}{cc}
+			1 & -1 \\
+			2 & 0 \\
+			3 & -4
+		\end{array}\right]$
+	dada nas bases can\^onicas \'e injetiva.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item Verdadeiro ou falso. Justifique dando um argumento l\'ogico ou um contra-exemplo.
+	\begin{enumerate}
+		\item Se $T(0) = 0$, ent\~ao $T$ \'e linear.
+		\item Se $T:V\rightarrow W$ \'e uma transforma\c{c}\~ao linear injetiva, ent\~ao existem vetores distintos $u$, $v \in V$ tais que $T(u-v)=0$.
+	\end{enumerate}
+
+\end{enumerate}
+\end{document}
