@@ -1,0 +1,111 @@
+\documentclass{article}
+
+\usepackage{graphicx}
+\usepackage[inline]{enumitem}
+\usepackage{amssymb}
+
+\newcommand{\ds}{\displaystyle}
+\providecommand{\sin}{} \renewcommand{\sin}{\mathrm{sen}\hspace{1pt}}
+\providecommand{\tan}{} \renewcommand{\tan}{\mathrm{tg}\hspace{1pt}}
+
+\begin{document}
+\noindent{}\rule{\textwidth}{0.4pt}
+\begin{center}
+	C\'alculo 2\\
+	Lista 2 --- Sequ\^encias e s\'eries \\
+	\vspace{0.2cm}
+	Prof. Adriano Barbosa
+\end{center}
+\noindent{}\rule{\textwidth}{0.4pt}
+
+\begin{enumerate}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item Calcule, caso exista, $\displaystyle\lim_{n\rightarrow\infty}\ x_n$, com $x_n$ igual a:
+	\begin{enumerate}
+		\item $\ds\frac{n^3+3n+1}{4n^3+2}$
+		\item $\sqrt{n+1}-\sqrt{n}$
+		\item $\ds\sin\frac{1}{n}$
+		\item $\ds\int_1^n \frac{1}{x}\ dx$
+		\item $\ds\left(1+\frac{2}{n}\right)^n$
+		\item $\ds\sum_{k=0}^n \frac{1}{2^k}$
+		\item $\ds\frac{\sin n}{n}$
+	\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item Considere a sequ\^encia $x_1=\sqrt{2}$, $x_2=\sqrt{2\sqrt{2}}$, $x_3=\sqrt{2\sqrt{2\sqrt{2}}}$, \ldots
+	\begin{enumerate}
+		\item Verifique que a sequ\^encia \'e crescente e limitada superiormente por 2.
+		\item Calcule seu limite.
+	\end{enumerate}
+[Dica: lembre que $\sqrt{ab} = \sqrt{a}\sqrt{b}$ e que $\sqrt{x} = x^\frac{1}{2}$.]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item Verifique se as sequ\^encias s\~ao mon\'otonas e limitadas
+	\begin{enumerate}
+		\item $x_n = \ds\frac{2n-3}{3n+4}$
+		\item $x_n = n + \ds\frac{1}{n}$
+	\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item Calcule a soma das s\'eries:
+	\begin{enumerate}
+		\item $\ds\sum_{k=1}^\infty\ds\frac{1}{n(n+1)}$
+
+			[Dica: escreva a fra\c{c}\~ao como soma de fra\c{c}\~oes parciais e em seguida escreva as somas parciais.]
+		\item $\ds\sum_{k=0}^\infty \ds\frac{1}{(4k+1)(4k+5)}$
+
+			[Dica: utilize a mesma estrat\'egia do item acima.]
+		\item $\ds\sum_{k=1}^\infty\ds\frac{n^2}{5n^2+4}$
+		\item $\ds\sum_{k=0}^\infty e^{-k}$
+		\item $\ds1+\frac{1}{\sqrt[3]{2}}+\frac{1}{\sqrt[3]{3}}+\cdots+\frac{1}{\sqrt[3]{n}}+\cdots$
+	\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item Determine se as s\'eries geom\'etricas s\~ao convergentes ou divergentes. Calcule a soma das s\'eries convergentes.
+	\begin{enumerate}
+		\item $\ds4+3+\frac{9}{4}+\frac{27}{16}+\cdots$
+		\item $\ds2+0,5+0,125+0,03125+\cdots$
+	\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item Escreva $0,\bar{8} = 0,88888\ldots$ como uma fra\c{c}\~ao.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item Calcule a soma das s\'eries
+	\begin{enumerate}
+		\item $\ds\left(\frac{1}{2}+\frac{1}{4}\right)+\left(\frac{1}{2^2}+\frac{1}{4^2}\right)+\left(\frac{1}{2^3}+\frac{1}{4^3}\right)+\cdots$
+		\item $\ds\sum_{k=1}^\infty \left(\frac{1}{5^k} - \frac{1}{k(k+1)}\right)$
+	\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item Determine se as s\'eries s\~ao convergentes ou divergentes
+	\begin{enumerate}
+		\item $\ds\sum_{n=1}^\infty \frac{(2n+1)^n}{n^{2n}}$
+		\item $\ds\sum_{k=1}^\infty \frac{1}{k^\pi}$
+		\item $\ds\sum_{k=1}^\infty k^2 e^{-k}$
+		\item $\ds\sum_{n=1}^\infty \frac{n!}{e^{n^2}}$
+	\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item Encontre o raio e o intervalo de converg\^encia das s\'eries
+	\begin{enumerate}
+		\item $\ds\sum_{n=0}^\infty \frac{n(x+2)^n}{3^{n+1}}$
+		\item $\ds\sum_{n=1}^\infty \frac{(x-2)^n}{n^n}$
+	\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item
+	\begin{enumerate}
+		\item Escreva as fun\c{c}\~oes $\sin x$ e $\cos x$ como s\'erie de Maclaurin e encontre seu raio e intervalo de converg\^encia.
+		\item Utilize o item $(a)$ e a s\'erie de Maclaurin da fun\c{c}\~ao $e^x$ para provar a F\'ormula de Euler: $e^{ix} = \cos x + i\ \sin x$, onde $i$ \'e a unidade imagin\'aria.
+	\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item Encontre a s\'erie de Taylor das fun\c{c}\~oes abaixo centradas no valor dado
+	\begin{enumerate}
+		\item $f(x) = x^4 - 3x^2 + 1$, $a = 1$
+		\item $f(x) = \ln x$, $a = 2$
+	\end{enumerate}
+
+\end{enumerate}
+\end{document}
