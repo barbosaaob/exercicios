@@ -1,0 +1,134 @@
+\documentclass[a4paper,5pt]{amsbook}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{graphics}
+\usepackage[]{float}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage[]{amsmath}
+\usepackage[]{epsfig}
+%\usepackage[brazil]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{verbatim}
+%\usepackage[]{pstricks}
+%\usepackage[notcite,notref]{showkeys}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newtheorem{theorem}{Teorema}[chapter]
+\newtheorem{lemma}{Lema}[chapter]
+\newtheorem{definition}{Defini\c{c}\~{a}o}[chapter]
+\newtheorem{remark}{Observa\c{c}\~{a}o}[chapter]
+\newtheorem{proposition}{Proposi\c{c}\~{a}o}[chapter]
+\newtheorem{corollary}{Corolario}[chapter]
+\newtheorem{example}{Exemplo}[chapter]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\R}{\mathbb R}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\N}{\mathbb N}
+\newcommand{\lan}{\langle}
+\newcommand{\ran}{\rangle}
+\newcommand{\sen}{\text{sen}}
+\newcommand{\I}{\infty}
+\newcommand{\vet}[1]{\ensuremath{\overrightarrow{#1}}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%---------------------------------------------------------
+\setlength{\textwidth}{16cm} %\setlength{\topmargin}{-0.1cm}
+\setlength{\leftmargin}{1.2cm} \setlength{\rightmargin}{1.2cm}
+\setlength{\oddsidemargin}{0cm}\setlength{\evensidemargin}{0cm}
+%---------------------------------------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\setlength{\textwidth}{16cm}
+%\addtolength{\oddsidemargin}{-1.7cm}
+%\addtolength{\evensidemargin}{-1.7cm}
+%\setlength{\textheight}{20cm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+\renewcommand{\baselinestretch}{1.6}
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+\renewcommand{\theequation}{\thesection.\arabic{equation}}
+\setlength{\voffset}{-50pt}
+\numberwithin{equation}{chapter}
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\thispagestyle{empty}
+\begin{minipage}[b]{0.45\linewidth}
+\begin{tabular}{c}
+\hline \hline
+{{\bf UNIVERSIDADE FEDERAL DA GRANDE DOURADOS}}\\
+
+{{\bf FACET}} \\
+
+\hline
+Lista 02\hspace{12 cm}  12/09/2016  \\
+\hline \hline
+\end{tabular}
+%
+\end{minipage} 
+
+\vspace{0.2cm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   formulario  in\'icio  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 
+ 
+\begin{enumerate}
+\item A transforma\c{c}\~ao $x=au$, $y=bv$ $(a,b>0)$ pode ser reescrita como $x/a=u$, $y/b=v$ e, portanto, transforma a regi\~ao circular $$u^2+v^2\leq1$$ na regi\~ao el\'iptica $$ \dfrac{x^2}{a^2}+\dfrac{y^2}{b^2}\leq 1. $$ Ao efetuar integra\c{c}\~oes em regi\~oes el\'ipticas, primeiro transformamos esta regi\~ao em uma circular e depois aplicamos a transformada em coordenadas polares da seguinte maneira:
+$$u=r\cos\theta\Rightarrow x/a=u=r\cos\theta\Rightarrow x=ra\cos\theta$$
+$$v=r\sin\theta\Rightarrow y/b=v=r\sin\theta\Rightarrow y=rb\sin\theta.$$
+Portanto, a mudan\c{c}a a coordenadas polares de uma regi\~ao el\'iptica \'e dada por $$(x,y)=(ar\cos\theta,br\sin\theta)$$ com $\theta\in [0,2\pi)$ e $r\in [0,1]$. 
+\begin{itemize}
+ \item Usando esta mudan\c{c}a, calcule a integral $\int\int_R \sqrt{16x^2+9y^2}dA $, onde $R$ \'e a regi\~ao envolvida pela elipse $ \dfrac{x^2}{3^2}+\dfrac{y^2}{4^2}= 1.$\\
+\end{itemize}
+
+
+\item De modo an\'alogo, a transforma\c{c}\~ao $x=au$, $y=bv$, $z=cw$ $(a,b,c>0)$ pode ser reescrita como $x/a=u$, $y/b=v$,$z/c=w$ e, portanto, transforma a regi\~ao esf\'erica $$u^2+v^2+w^2\leq1$$ na regi\~ao elipsoidal $$ \dfrac{x^2}{a^2}+\dfrac{y^2}{b^2}+\dfrac{z^2}{c^2}\leq 1. $$ Ao efetuar integra\c{c}\~oes em regi\~oes elipsoidais, primeiro transformamos esta regi\~ao em uma esf\'erica e depois aplicamos a transformada em coordenadas esf\'ericas da seguinte maneira:
+$$u=\rho\cos\theta\sin\phi\Rightarrow x/a=u=\rho\cos\theta\sin\phi\Rightarrow x=a\rho \cos\theta\sin\phi$$
+$$v=\rho\sin\theta\sin\phi\Rightarrow y/b=v=\rho\sin\theta\sin\phi\Rightarrow y=b\rho \cos\theta\sin\phi.$$
+$$w=\rho\cos\phi\Rightarrow z/c=w=\rho\cos\phi\Rightarrow z= c\rho \cos\phi.$$
+Portanto, a mudan\c{c}a a coordenadas esf\'ericas de uma regi\~ao elipsoidal \'e dada por $$(x,y)=(a\rho \cos\theta\sin\phi,b\rho \cos\theta\sin\phi,c\rho \cos\phi)$$ com $\theta\in [0,2\pi)$, $\phi \in [0,\pi]$ $r\in [0,1]$. 
+\begin{itemize}
+ \item Usando esta mudan\c{c}a, calcule a integral $\int\int\int_G x^2 dV $, onde $G$ \'e a regi\~ao envolvida pelo elips\'oide $ 9x^2+4y^2+z=36.$\\
+\end{itemize}
+
+% \item Calcule a integral de linha, onde C \'e a curva dada:
+% \begin{enumerate}
+%  \item[a)] $\int_C xy^4 ds$, $C$ \'e a metade direita do c\'irculo $x^2+y^2=16.$
+%  \item[b)] $\int_C xe^{yz} ds$, $C$ \'e o seguimento de reta de $(0,0,0)$ a $(1,2,3).$
+%  \item[c)] $\int_C z dx+x dy+y dz$, $C: x=t^2$, $y=t^3$, $z=t^2$, $0\leq t\leq 1.$\\
+% \end{enumerate}
+
+
+% \item Se $\rho(x,y)$ representa a fun\c{c}\~ao densidade linear de um ponto $(x,y)$ de um fio fino com a forma de uma curva $C$, ent\~ao a \textbf{massa total} do fio \'e dada pela integral de linha $$m=\int_C \rho(x,y)ds.$$ O \textbf{centro de massa} do fio com a fun\c{c}\~ao densidade $\rho(x,y)$ encontra-se no ponto $(\overline{x},\overline{y})$, onde $$ \overline{x}=\frac{1}{m}\int_C x\rho(x,y)ds,$$ $$\overline{y}=\frac{1}{m}\int_C y\rho(x,y)ds.$$
+% \paragraph{} Se um arame fino tem a forma da parte que est\'a no primeiro quadrante da circunfer\^encia com centro na origem e raio $a$ e a fun\c{c}\~ao densidade for $\rho(x,y)=kxy$, $k$ constante, encontre:
+% \begin{enumerate}
+%  \item[a)] A massa total do arame.
+%  \item[b)] O centro de massa do arame.\\
+% \end{enumerate}
+% \item O campo de velocidade de um fluido em movimento \'e dado por $\overrightarrow{v}=(2x,2y,-z).$ Calcular a circula\c{c}\~ao do fluido ao redor da curva fechada C, sendo C dada por $\overrightarrow{r}=\cos t\overrightarrow{i}+\sen t\overrightarrow{j}+2\overrightarrow{k}$, $t\in[0,2\pi].$\\
+% \item Determine o trabalho realizado pelo campo de for\c{c}a $F(x,y)=x^2\overrightarrow{i}+ye^x\overrightarrow{j}$ em uma part\'icula que se move sobre a par\'abola $x=y^2+1$ de $(1,0)$ a $(2,1)$.
+
+
+\end{enumerate}
+
+
+
+ 
+
+
+\begin{flushright}
+ \textit{ Bons estudos!}
+\end{flushright}
+\begin{center}
+ \textbf{Bibliografia:}\\ Stewart, J. - C\'alculo Vol II\\ Flemming, D. - C\'alculo B \\ Howard, A. - C\'alculo Vol II\\ Guidorizzi, H. - Um curso de c\'alculo Vol 3.
+\end{center}
+\end{document}

@@ -1,0 +1,88 @@
+\documentclass{article}
+
+\usepackage[inline]{enumitem}
+
+\newcommand{\ds}{\displaystyle}
+
+\begin{document}
+
+\noindent{}\rule{\textwidth}{0.4pt}
+\begin{center}
+	Universidade Federal da Grande Dourados\\
+	An\'alise Num\'erica --- Lista 2 \\
+	Engenharia Mec\^anica --- 2016.2 \\
+	Prof.\ Adriano Barbosa
+\end{center}
+\noindent{}\rule{\textwidth}{0.4pt}
+
+\begin{enumerate}
+	\item Seja $f(x) = x^2 - 6$:
+		\begin{enumerate}
+			\item Use o m\'etodo de Newton e calcule $p_2$ usando $p_0=1$.
+			\item Use o m\'etodo da Secante e calcule $p_3$ usando $p_0=3$ e
+				$p_1=2$.
+			\item Use o m\'etodo da Falsa Posi\c{c}\~ao e calcule $p_3$ usando $p_0=3$
+				e $p_1=2$.
+			\item Qual dos itens acima \'e mais pr\'oximo de $\sqrt{6}$.
+		\end{enumerate}
+
+	\item Sejam $f(x) = -x^3-\cos{x}$ e $p_0=-1$. Use o m\'etodo de Newton para
+		calcular $p_2$. Podemos usar $p_0=0$?
+
+	\item Use o m\'etodo de Newton e encontre solu\c{c}\~oes com precis\~ao de pelo menos
+		$10^{-4}$ para os problemas abaixo:
+		\begin{enumerate}
+			\item $x^3 - 2x^2 - 5 = 0$ no intervalo $[1,4]$.
+			\item $x - 0.8 - 0.2\sin{x} = 0$ no intervalo $[0, \pi/2]$.
+		\end{enumerate}
+
+	\item Use o m\'etodo de Newton para aproximar, com precis\~ao de $10^{-4}$, o
+		ponto do gr\'afico de $y=x^2$ mais pr\'oximo do ponto $(1,0)$. [Dica:
+		minimize ${[d(x)]}^2$, onde $d(x)$ \'e a dist\^ancia entre $(x,x^2)$ e
+		$(1,0)$].
+
+	\item Ao usar o m\'etodo de Newton para resolver a equa\c{c}\~ao $0.5 +
+		0.25x^2-x\sin{x}-0.5\cos{2x}=0$ com $p_0=\pi/2$ e precis\~ao $10^{-5}$
+		precisamos de $15$ itera\c{c}\~oes. Para $p_0=5\pi$ e mesma precis\~ao,
+		precisamos de $19$ itera\c{c}\~oes. Por que o m\'etodo de Newton n\~ao apresenta
+		a usual converg\^encia r\'apida para esse problema?
+
+	\item A fun\c{c}\~ao $f(x) = \tan(\pi x) - 6$ possui um zero em
+		$\frac{1}{\pi}\arctan{6}\approx{}0.447431543$. Tome $p_0 = 0$ e $p_1 =
+		0.48$ e use $10$ itera\c{c}\~oes dos m\'etodos abaixo para aproximar essa raiz.
+		Qual dos m\'etodos \'e apresenta melhor resultado?
+		\begin{enumerate}
+			\item Bisse\c{c}\~ao.
+			\item Falsa Posi\c{c}\~ao.
+			\item Secante.
+		\end{enumerate}
+
+	\item A equa\c{c}\~ao $x^2-10\cos{x} = 0$ possui duas solu\c{c}\~oes, $\pm1.3793646$.
+		Use o m\'etodo de Newton para aproximar as solu\c{c}oẽs com precis\~ao
+		$10^{-5}$ com os valores de $p_0$ abaixo:
+		\begin{enumerate}
+			\item $p_0=-100$
+			\item $p_0=-50$
+			\item $p_0=-25$
+			\item $p_0=25$
+			\item $p_0=50$
+			\item $p_0=100$
+		\end{enumerate}
+\end{enumerate}
+
+Respostas:
+
+\noindent{}1. (a) $p_2=2.60714$ (b) $p_3=2.45454545$ (c) $p_3=2.444444$ \\
+(d) a aproxima\c{c}\~ao em (c) \'e melhor
+
+\noindent{}2. $p_2=-0.86568$
+
+\noindent{}3. (a) $p_4=2.690647$, com $p_0=2.5$ (b) $p_5=0.964334$, com $p_0=\pi/4$
+
+\noindent{}4. $(0.5897545, 0.3478104)$ ap\'os $6$ itera\c{c}\~oes e $p_0=0$
+
+\noindent{}6. (a) $p_{10}=0.4479563$ (b) $p_{10}=0.442067$ (c) $p_{10} = -195.895$
+
+\noindent{}7. (a) $p_8=-1.379365$ (b) $p_7=-1.379365$ (c) $p_7=1.379365$ \\
+(d) $p_7=-1.379365$ (e) $p_7=1.379365$ (e) $p_8=1.379365$
+\end{document}  % chktex 16

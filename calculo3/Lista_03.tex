@@ -1,0 +1,126 @@
+\documentclass[a4paper,5pt]{amsbook}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{graphics}
+\usepackage[]{float}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage[]{amsmath}
+\usepackage[]{epsfig}
+%\usepackage[brazil]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{verbatim}
+%\usepackage[]{pstricks}
+%\usepackage[notcite,notref]{showkeys}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newtheorem{theorem}{Teorema}[chapter]
+\newtheorem{lemma}{Lema}[chapter]
+\newtheorem{definition}{Defini\c{c}\~{a}o}[chapter]
+\newtheorem{remark}{Observa\c{c}\~{a}o}[chapter]
+\newtheorem{proposition}{Proposi\c{c}\~{a}o}[chapter]
+\newtheorem{corollary}{Corolario}[chapter]
+\newtheorem{example}{Exemplo}[chapter]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\R}{\mathbb R}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\N}{\mathbb N}
+\newcommand{\lan}{\langle}
+\newcommand{\ran}{\rangle}
+\newcommand{\sen}{\text{sen}}
+\newcommand{\I}{\infty}
+\newcommand{\vet}[1]{\ensuremath{\overrightarrow{#1}}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%---------------------------------------------------------
+\setlength{\textwidth}{16cm} %\setlength{\topmargin}{-0.1cm}
+\setlength{\leftmargin}{1.2cm} \setlength{\rightmargin}{1.2cm}
+\setlength{\oddsidemargin}{0cm}\setlength{\evensidemargin}{0cm}
+%---------------------------------------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\setlength{\textwidth}{16cm}
+%\addtolength{\oddsidemargin}{-1.7cm}
+%\addtolength{\evensidemargin}{-1.7cm}
+%\setlength{\textheight}{20cm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+\renewcommand{\baselinestretch}{1.6}
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+\renewcommand{\theequation}{\thesection.\arabic{equation}}
+\setlength{\voffset}{-50pt}
+\numberwithin{equation}{chapter}
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\thispagestyle{empty}
+\begin{minipage}[b]{0.45\linewidth}
+\begin{tabular}{c}
+\hline \hline
+{{\bf UNIVERSIDADE FEDERAL DA GRANDE DOURADOS}}\\
+
+{{\bf FACET}} \\
+
+\hline
+Lista 03\hspace{12 cm}  12/09/2016  \\
+\hline \hline
+\end{tabular}
+%
+\end{minipage} 
+
+\vspace{0.2cm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   formulario  in\'icio  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 
+ 
+\begin{enumerate}
+\item Considere o campo de for\c{c}as $\overrightarrow{F}(x,y)=\left(\dfrac{x}{x^2+y^2}, \dfrac{y}{x^2+y^2}\right)$.\\
+\begin{itemize}
+ \item[a)]Calcule o trabalho realizado pelo campo $\overrightarrow{F}$ numa part\'icula que se move ao longo da curva C, que consiste do arco da par\'abola $y=x^2-1$ com $-1\leq x \leq 2$, seguido do segmento da reta que une os pontos $(2,3)$ e $(-1,0)$.\\
+ \item[b)] Mostre que $ \displaystyle\oint_{C}\overrightarrow{F}\cdot d\overrightarrow{r} = 0$ para toda curva fechada simples $C$, suave por partes, que circunda a origem.\\
+\end{itemize}
+
+\item Calcule o trabalho realizado pelo campo de for\c{c}as $\overrightarrow{F}$ numa part\'icula que se move ao longo de uma curva lisa C, do ponto $A$ ao ponto $B$ dados:
+\begin{itemize}
+ \item[a)]$F(x,y)=3y\textbf{i}+3x\textbf{j}$ do ponto $A=(1,2)$ ao ponto $B=(4,0)$.\\
+ \item[b)]$F(x,y)=ye^{xy}\textbf{i}+xe^{xy}\textbf{j}$ do ponto $A=(-1,1)$ ao ponto $B=(2,0)$.\\
+ \item[c)]$F(x,y,z)=2xy\textbf{i}+x^2\textbf{j}+2\textbf{k}$ do ponto $A=(0,1,1)$ ao ponto $B=(1,0,1)$.\\
+ \item[d)]$F(x,y,z)=2x\sen z\textbf{i}+(z^3-e^y)\textbf{j}+(x^2\cos z+3yz^2)\textbf{k}$ do ponto $A=(1,1,1)$ ao ponto $B=(1,2,3)$.\\
+\end{itemize}
+
+\item Considere as fun\c{c}\~oes $P(x,y)=\dfrac{-y}{x^2+y^2}$ e $Q(x,y)=\dfrac{x}{x^2+y^2}$, definidas para $(x,y)\neq (0,0)$. Considere ainda D a regi\~ao descrita por $0<x^2+y^2\leq R$ e $\partial D$ a curva fronteira desta regi\~ao.
+ \begin{itemize}
+  \item[a)] Mostre que $\displaystyle\oint_{\partial D}Pdx+Qdy = 2\pi;$\\
+  \item[b)]Mostre que $\displaystyle\int\int_D\left(\frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y}\right)dxdy = 0.$ Por que isto n\~ao contradiz o Teorema de Green?\\
+  \item[c)]  Mostre que $\displaystyle\oint_{C}Pdx+Qdy = 2\pi$ para toda curva fechada simples, suave por partes, orientada no sentindo anti-hor\'ario que circunda a origem.\\
+ \end{itemize}
+ \item Calcule as integrais de linha:
+\begin{itemize}
+ \item[a)]$\displaystyle\oint_{C}ydx - xdy$, onde C \'e o tri\^angulo definido pelos pontos $A=(0,0)$, $B=(2,0)$ e $C=(0,4)$, no sentido hor\'ario.\\
+  \item[b)]$\displaystyle\oint_{C}ydx - xdy$, onde C \'e a cardi\'oide de equa\c{c}\~ao polar $$r(\theta)=2(1+cos\theta)\quad (0\leq \theta\leq 2\pi)$$ e equa\c{c}\~ao param\'etrica  $$\overrightarrow{r}(\theta)=(2\cos t +\cos 2t+1,2\sen t +\sen 2t).$$
+  
+\end{itemize}
+
+
+\end{enumerate}
+
+
+
+ 
+
+
+\begin{flushright}
+ \textit{ Bons estudos!}
+\end{flushright}
+\begin{center}
+ \textbf{Bibliografia:}\\ Stewart, J. - C\'alculo Vol II\\ Flemming, D. - C\'alculo B \\ Howard, A. - C\'alculo Vol II\\ Guidorizzi, H. - Um curso de c\'alculo Vol 3.
+\end{center}
+\end{document}

@@ -1,0 +1,118 @@
+\documentclass{article}
+
+\usepackage[inline]{enumitem}
+
+\newcommand{\ds}{\displaystyle}
+
+\begin{document}
+
+\noindent{}\rule{\textwidth}{0.4pt}
+\begin{center}
+	Universidade Federal da Grande Dourados\\
+	An\'alise Num\'erica --- Lista 1 \\
+	Engenharia Mec\^anica --- 2016.2 \\
+	Prof.\ Adriano Barbosa
+\end{center}
+\noindent{}\rule{\textwidth}{0.4pt}
+
+\begin{enumerate}
+	\item Calcule o erro absoluto e relativo das aproxima\c{c}\~oes de $p$ por $p^*$:
+		\begin{enumerate}
+			\item $p = \pi,\ p^*  = 22/7$
+			\item $p = \pi,\ p^* = 3.1416$
+			\item $p = e,\ p^* = 2.718$
+			\item $p = \sqrt{2},\ p^* = 1.414$
+			\item $p = 8!,\ p^* = 39900$
+		\end{enumerate}
+	
+	\item Encontre o maior intervalo ao qual $p^*$ deve pertencer para
+		aproximar $p$ com erro relativo de pelo menos $10^{-3}$.
+		\begin{enumerate}
+			\item $p = \pi$
+			\item $p = e$
+			\item $p = 150$
+			\item $p = 1500$
+		\end{enumerate}
+	
+	\item O n\'umero $e$ pode ser definido por $\ds\sum_{n=0}^\infty
+		\frac{1}{n!}$.  Calcule o erro absoluto e relativo da aproxima\c{c}\~ao
+		$\ds\sum_{n=0}^5 \frac{1}{n!}$.
+
+	\item Um sistema linear da forma
+		\[\left\{\begin{array}{lcl}
+			ax + by & = & e \\
+			cx + dy & = & f
+		\end{array}\right.\]
+		pode ser resolvido utilizando o seguinte algoritmo:
+		\[\begin{array}{ll}
+		calcule & m = \ds\frac{c}{a},\ se\ a \neq{} 0; \\
+				& d_1 = d - mb; \\
+				& f_1 = f - me; \\
+				& y = \ds\frac{f_1}{d_1}; \\
+				& x = \ds\frac{e - by}{a}.
+		\end{array}\]
+		Resolva o sistema abaixo utilizando aritim\'etica computacional com
+		quatro d\'{\i}gitos e arredondamento.
+
+		% \begin{enumerate}
+			% \item
+			\[\left\{\begin{array}{lcl}
+					1.130x - 6.990y & = & 14.20 \\
+					1.013x - 6.099y & = & 14.22
+				\end{array}\right.\]
+			% \item $\left\{\begin{array}{rcl}
+			% 		8.110x + 12.20y & = & -0.1370 \\
+			% 		-18.11x + 112.2y & = & -0.1376
+			% 	\end{array}\right.$
+		% \end{enumerate}
+
+	\item Use o m\'etodo da Bisse\c{c}\~ao e encontre $p_3$ para $f (x) = \sqrt{x} -
+		\cos{x}$ em $[0,1]$.
+
+	\item Use o m\'etodo da Bisse\c{c}\~ao para encontrar a solu\c{c}\~ao da equa\c{c}\~ao $x^3 -
+		7x^2 + 14x - 6 = 0$ com precis\~ao de $10^{-2}$ em cada intervalo:
+		\begin{enumerate}
+			\item $[0,1]$
+			\item $[1, 3.2]$
+			\item $[3.2, 4]$
+		\end{enumerate}
+	
+	\item Esboce o gr\'afico de $y = x$ e $y = 2\sin{x}$. Use o m\'etodo da
+		Bisse\c{c}\~ao para encontrar uma a proxima\c{c}\~ao com precis\~ao de $10^{-2}$ da
+		primeira raiz positiva de $x = 2\sin{x}$.
+	
+	% \item Esboce o gr\'afico de $y = e^x - 2$ e $y = \cos{(e^x - 2)}$. Use o m\'etodo
+	% 	da Bisse\c{c}\~ao para encontrar uma a proxima\c{c}\~ao com precis\~ao de $10^{-2}$
+	% 	em $[0.5, 1.5]$ de uma raiz de $e^x - 2 = \cos{(e^x - 2)}$.
+
+	\item Encontre uma aproxima\c{c}\~ao de $\sqrt[3]{25}$ com precis\~ao de $10^{-2}$
+		usando o m\'etodo da Bisse\c{c}\~ao.
+\end{enumerate}
+
+Respostas:
+
+\noindent{}1. (a) $0.001264$, $4.025\times{}10^{-4}$\\
+(b) $7.346\times{}10^{-6}$, $2.338\times{}10^{-6}$ \\
+(c) $2.818\times{}10^{-4}$, $1.037\times{}10^{-4}$ \\
+(d) $2.136\times{}10^{-4}$, $1.1510\times{}10^{-4}$ \\
+(e) $420$, $1.042\times{}10^{-2}$
+
+\noindent{}2. (a) $[3.138451061, 3.144734246]$ \\
+(b) $[1.412799349, 1.415627776]$ \\
+(c) $[149.85, 150.15]$ \\
+(d) $[1498.5, 1501.5]$
+
+\noindent{}3. aproxima\c{c}\~ao: $2.7166667$ \\
+erro absoluto: $0.0016152$ \\
+erro relativo: $5.9418\times{}10^{-4}$
+
+\noindent{}4. $x = 67.42$, $y = 8.869$
+
+\noindent{}5. $p_3 = 0.625$
+
+\noindent{}6. (a) $p_7 = 0.5859$ (b) $p_8 = 3.002$ (c) $p_7 = 3.419$
+
+\noindent{}7. Usando $[1.5, 2]$, $p_6 = 1.8984375$
+
+\noindent{}8. Usando $[2, 3]$, $p_7 = 2.9921875$
+\end{document}  % chktex 16

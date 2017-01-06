@@ -1,0 +1,122 @@
+\documentclass[a4paper,5pt]{amsbook}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{graphics}
+\usepackage[]{float}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage[]{amsmath}
+\usepackage[]{epsfig}
+%\usepackage[brazil]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{verbatim}
+%\usepackage[]{pstricks}
+%\usepackage[notcite,notref]{showkeys}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newtheorem{theorem}{Teorema}[chapter]
+\newtheorem{lemma}{Lema}[chapter]
+\newtheorem{definition}{Defini\c{c}\~{a}o}[chapter]
+\newtheorem{remark}{Observa\c{c}\~{a}o}[chapter]
+\newtheorem{proposition}{Proposi\c{c}\~{a}o}[chapter]
+\newtheorem{corollary}{Corolario}[chapter]
+\newtheorem{example}{Exemplo}[chapter]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\R}{\mathbb R}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\N}{\mathbb N}
+\newcommand{\lan}{\langle}
+\newcommand{\ran}{\rangle}
+\newcommand{\sen}{\text{sen}}
+\newcommand{\I}{\infty}
+\newcommand{\vet}[1]{\ensuremath{\overrightarrow{#1}}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%---------------------------------------------------------
+\setlength{\textwidth}{16cm} %\setlength{\topmargin}{-0.1cm}
+\setlength{\leftmargin}{1.2cm} \setlength{\rightmargin}{1.2cm}
+\setlength{\oddsidemargin}{0cm}\setlength{\evensidemargin}{0cm}
+%---------------------------------------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\setlength{\textwidth}{16cm}
+%\addtolength{\oddsidemargin}{-1.7cm}
+%\addtolength{\evensidemargin}{-1.7cm}
+%\setlength{\textheight}{20cm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+\renewcommand{\baselinestretch}{1.6}
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+\renewcommand{\theequation}{\thesection.\arabic{equation}}
+\setlength{\voffset}{-50pt}
+\numberwithin{equation}{chapter}
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\thispagestyle{empty}
+\begin{minipage}[b]{0.45\linewidth}
+\begin{tabular}{c}
+\hline \hline
+{{\bf UNIVERSIDADE FEDERAL DA GRANDE DOURADOS}}\\
+
+{{\bf FACET}} \\
+
+\hline
+Lista 01\hspace{12cm}  12/09/2016  \\
+\hline \hline
+\end{tabular}
+%
+\end{minipage} 
+
+\vspace{0.2cm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   formulario  in\'icio  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{enumerate}
+
+ \item Calcule as integrais duplas:
+ \begin{itemize}
+ 
+ \item[a)]$\displaystyle\iint_R xe^{xy}dxdy$ onde $R=[1,3]\times[0,1].$\\
+ \item[b)]$\displaystyle\iint_R y\ln{x}dxdy$ onde $R=[2,3]\times[1,2].$\\
+ \item[c)]$\displaystyle\iint_R \dfrac{x}{1+xy} dxdy$ onde $R=[0,1]\times[0,1].$\\
+ \item[d)]$\displaystyle\int_{0}^{2}\int_{0}^{\pi}r\sen^2{\theta}d\theta dr.$\\
+ \item[e)]$\displaystyle\int_{0}^{\ln{2}}\int_{0}^{1}xye^{y^2x}dydx.$\\
+ \item[f)]$\displaystyle\int_{\pi/2}^{\pi}\int_{1}^{2}x\cos{(xy)}dydx.$\\
+ \item[g)]$\displaystyle\iint_R (2x+y)dxdy$ onde $R$ \'e a regi\~ao delimitada por $x=y^2-1$, $x=5$, $y=-1$ e $y=2$.\\
+ \item[h)]$\displaystyle\iint_R xdxdy$ onde $R$ \'e a regi\~ao delimitada por $y=-x$, $y=4x$ e $y=\dfrac{3x}{2}+\dfrac{5}{2} $.\\
+
+  
+ \end{itemize}
+
+
+ \item Calcule as integrais triplas:
+ \begin{itemize}
+  \item[a)]$\displaystyle\iiint_B xyz^2dxdydz$ onde $B=[0,1]\times[0,2]\times[1,3].$\\
+ \item[b)]$\displaystyle\iiint_B 2y\sen(yz)dxdydz$ onde $B$ \'e o paralelep\'ipedo limitado por $x=\pi$, $y=\frac{\pi}{2}$, $z=\frac{\pi}{3}$ e os planos coordenados.\\
+ \item[c)]$\displaystyle\int_{1}^{3}\int_{x}^{x^2}\int_{0}^{\ln z}xe^{y}dydzdx.$\\
+ \item[d)]$\displaystyle\int_{1/3}^{1/2}\int_{0}^{\pi}\int_{0}^{1}zx\sen(xy)dzdydx.$\\
+ \item[e)]$\displaystyle\iiint_B xydxdydz$ onde $B$ \'e o s\'olido limitado pelos cilindros parab\'olicos $x=y^2$ e $y=x^2$ e pelos planos $z=0$ e $z=x+y$.\\
+  
+ \end{itemize}
+
+ 
+ \end{enumerate}
+ 
+
+
+\begin{flushright}
+ \textit{ Bons estudos!}
+\end{flushright}
+\begin{center}
+ \textbf{Bibliografia:}\\ Stewart, J. - C\'alculo Vol II\\ Flemming, D. - C\'alculo B \\ Howard, A. - C\'alculo Vol II.\\ 
+\end{center}
+\end{document}
