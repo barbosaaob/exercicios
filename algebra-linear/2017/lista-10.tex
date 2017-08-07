@@ -1,0 +1,115 @@
+\documentclass[a4paper,5pt]{amsbook}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{textcomp}
+\usepackage{systeme}
+\usepackage{amssymb}
+\usepackage[]{amsmath}
+\usepackage{subcaption}
+\usepackage[inline]{enumitem}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\sen}{\,\mbox{sen}\,}
+\newcommand{\tg}{\,\mbox{tg}\,}
+\newcommand{\cosec}{\,\mbox{cosec}\,}
+\newcommand{\cotg}{\,\mbox{cotg}\,}
+\newcommand{\tr}{\,\mbox{tr}\,}
+\newcommand{\ds}{\displaystyle}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setlength{\textwidth}{16cm} %\setlength{\topmargin}{-1.3cm}
+\setlength{\textheight}{30cm}
+\setlength{\leftmargin}{1.2cm} \setlength{\rightmargin}{1.2cm}
+\setlength{\oddsidemargin}{0cm}\setlength{\evensidemargin}{0cm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \renewcommand{\baselinestretch}{1.6}
+% \renewcommand{\thefootnote}{\fnsymbol{footnote}}
+% \renewcommand{\theequation}{\thesection.\arabic{equation}}
+% \setlength{\voffset}{-50pt}
+% \numberwithin{equation}{chapter}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\thispagestyle{empty}
+\pagestyle{empty}
+\begin{minipage}[h]{0.14\textwidth}
+	\includegraphics[scale=0.24]{../../ufgd.png}
+\end{minipage}
+\begin{minipage}[h]{\textwidth}
+\begin{tabular}{c}
+{{\bf UNIVERSIDADE FEDERAL DA GRANDE DOURADOS}}\\
+{{\bf \'{A}lgebra Linear e Geometria Anal\'{\i}tica --- Lista 10}}\\
+{{\bf Prof.\ Adriano Barbosa}}\\
+\end{tabular}
+\vspace{-0.45cm}
+%
+\end{minipage}
+
+%------------------------
+
+\vspace{1cm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   formulario  inicio  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{enumerate}
+	\vspace{0.5cm}
+	\item Encontre o dom\'{\i}nio e o contra-dom\'{\i}nio das transforma\c{c}\~oes abaixo e
+		determine se s\~ao lineares:
+		\begin{enumerate}
+			\item $T(x,y,z) = (3x-2y+4z, 5x-8y+z)$
+			\item $T(x,y) = (2xy-y, x+3xy, x+y)$
+			\item $T(x,y,z,t) = (x^2-3y+z-2t, 3x-4y-z^2+t)$
+		\end{enumerate}
+
+	\vspace{0.5cm}
+	\item Encontre a matriz can\^onica das transforma\c{c}\~oes lineares abaixo
+		\begin{enumerate}
+			\item $T: \mathbb{R}^4 \rightarrow \mathbb{R}2$, $T(x,y,z,t) =
+				2x-3y+t, 3x+5y-t)$
+			\item $T: \mathbb{R}^4 \rightarrow \mathbb{R}^4$, $T(x,y,z,t) = (x,
+				x+y, x+y+z, x+y+z+t)$
+			\item $T: \mathbb{R}^2 \rightarrow \mathbb{R}^3$, $T(x,y) = (-x+y,
+				3x-2y, 5x-7y)$
+		\end{enumerate}
+
+	\vspace{0.5cm}
+	\item Encontre a transforma\c{c}\~ao linear cuja matriz can\^onica \'e dada abaixo:
+
+		\begin{enumerate*}
+			\item $\begin{bmatrix}
+					1 & 2 \\
+					3 & 4
+				\end{bmatrix}$
+			\hspace{0.5cm}
+			\hspace{0.5cm}
+			\item $\begin{bmatrix}
+					-1 & 2 & 0 \\
+					3 & 1 & 5
+				\end{bmatrix}$
+			\hspace{0.5cm}
+			\hspace{0.5cm}
+			\item $\begin{bmatrix}
+					-1 & 1 \\
+					2 & 4 \\
+					7 & 8
+				\end{bmatrix}$
+		\end{enumerate*}
+
+	\vspace{0.5cm}
+	\item Use a matriz can\^onica $[T]$ para obter $T(v)$ e em seguida confira
+		o resultado calculando $T(v)$ diretamente:
+		\begin{enumerate}
+			\item $T: \mathbb{R}^2 \rightarrow \mathbb{R}^3$, $T(x,y) = (-x+y,
+				y, x-y)$ avaliada em $(1,2)$
+			\item $T: \mathbb{R}^3 \rightarrow \mathbb{R}^3$, $T(x,y,z) =
+				(-x+2y, y-3z, x-y-z)$ avaliada em $(2,3,0)$
+		\end{enumerate}
+\end{enumerate}
+
+\end{document}
