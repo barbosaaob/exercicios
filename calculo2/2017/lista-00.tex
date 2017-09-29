@@ -1,0 +1,143 @@
+\documentclass[a4paper,5pt]{amsbook}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{textcomp}
+\usepackage{systeme}
+\usepackage{amssymb}
+\usepackage[]{amsmath}
+\usepackage{subcaption}
+\usepackage[inline]{enumitem}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\sen}{\,\mbox{sen}\,}
+\newcommand{\tg}{\,\mbox{tg}\,}
+\newcommand{\cosec}{\,\mbox{cosec}\,}
+\newcommand{\cotg}{\,\mbox{cotg}\,}
+\newcommand{\tr}{\,\mbox{tr}\,}
+\newcommand{\ds}{\displaystyle}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setlength{\textwidth}{16cm} %\setlength{\topmargin}{-1.3cm}
+\setlength{\textheight}{30cm}
+\setlength{\leftmargin}{1.2cm} \setlength{\rightmargin}{1.2cm}
+\setlength{\oddsidemargin}{0cm}\setlength{\evensidemargin}{0cm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \renewcommand{\baselinestretch}{1.6}
+% \renewcommand{\thefootnote}{\fnsymbol{footnote}}
+% \renewcommand{\theequation}{\thesection.\arabic{equation}}
+% \setlength{\voffset}{-50pt}
+% \numberwithin{equation}{chapter}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\thispagestyle{empty}
+\pagestyle{empty}
+\begin{minipage}[h]{0.14\textwidth}
+	\includegraphics[scale=0.24]{../../ufgd.png}
+\end{minipage}
+\begin{minipage}[h]{\textwidth}
+\begin{tabular}{c}
+{{\bf UNIVERSIDADE FEDERAL DA GRANDE DOURADOS}}\\
+{{\bf C\'alculo Diferencial e Integral II --- Lista 0}}\\
+{{\bf Prof.\ Adriano Barbosa}}\\
+\end{tabular}
+\vspace{-0.45cm}
+%
+\end{minipage}
+
+%------------------------
+
+\vspace{1cm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   formulario  inicio  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{enumerate}
+	\vspace{0.5cm}
+	\item Encontre a antiderivada mais geral para cada fun\c{c}\~ao abaixo:
+
+		\hspace{-0.75cm}
+		\begin{enumerate*}
+			\item $f(x) = x-3$
+			\hspace{0.2cm}
+			\hspace{0.2cm}
+			\item $f(x) = \ds\frac{1}{2}+\frac{3}{4}x^2-\frac{4}{5}x^3$
+			\hspace{0.2cm}
+			\hspace{0.2cm}
+			\item $f(x) = (x+1)(2x-1)$
+			\hspace{0.2cm}
+			\hspace{0.2cm}
+			\item $f(x) = \ds7x^\frac{2}{5} + 8x^{-\frac{4}{5}}$
+			\\	
+			\item $f(x) = \sqrt{2}$
+			\hspace{0.2cm}
+			\hspace{0.2cm}
+			\item $f(x) = \ds\frac{10}{x^9}$
+			\hspace{0.2cm}
+			\hspace{0.2cm}
+			\item $f(x) = \ds\frac{1+t+t^2}{\sqrt{t}}$
+		\end{enumerate*}
+
+	\vspace{0.5cm}
+	\item Encontre a fun\c{c}\~ao $f$:
+
+		\hspace{-0.8cm}
+		\begin{enumerate*}
+			\item $f''(x) = 20x^3-12x^2+6x$
+			\hspace{0.2cm}
+			\hspace{0.2cm}
+			\item $f''(x) = x^6 - 3x^4 + x + 1$
+			\hspace{0.2cm}
+			\hspace{0.2cm}
+			\item $f''(x) = \ds\frac{2}{3}x^\frac{2}{3}$
+			\hspace{0.2cm}
+			\hspace{0.2cm}
+			\item $f'''(x) = \cos(t)$
+			\hspace{0.2cm}
+			\hspace{0.2cm}
+			\item $f''(x) = 6x+\sen(x)$
+			\hspace{0.2cm}
+			\hspace{0.2cm}
+			\item $f'''(x) = x-\sqrt{x}$
+		\end{enumerate*}
+
+	\vspace{0.5cm}
+	\item Calcule as integrais definidas:
+	
+		\hspace{-0.7cm}
+		\begin{enumerate*}
+			\item $\ds\int_{-1}^2 x^3-2x\ dx$
+			\hspace{0.2cm}
+			\hspace{0.2cm}
+			\item $\ds\int_1^4 5-2t+3t^2\ dt$
+			\hspace{0.2cm}
+			\hspace{0.2cm}
+			\item $\ds\int_1^9 \sqrt{x}\ dx$
+			\hspace{0.2cm}
+			\hspace{0.2cm}
+			\item $\ds\int_\frac{\pi}{6}^\pi \sen(\theta)\ d\theta$
+			\hspace{0.2cm}
+			\hspace{0.2cm}
+			\item $\ds\int_0^1 (u+2)(u-3)\ du$
+			\hspace{0.2cm}
+			\hspace{0.2cm}
+			\item $\ds\int_1^9 \frac{x-1}{\sqrt{x}}\ dx$
+			\hspace{0.2cm}
+			\hspace{0.2cm}
+			\item $\ds\int_0^\frac{\pi}{4} \sec^2(t)\ dt$
+			\hspace{0.2cm}
+			\hspace{0.2cm}
+			\item $\ds\int_1^2 (1+2y)^2\ dy$
+		\end{enumerate*}
+
+	\vspace{0.5cm}
+	\item O que est\'a errado na solu\c{c}\~ao abaixo?
+		\[\ds\int_{-2}^{1} x^{-4}\ dx = \left.\frac{x^{-3}}{-3}\right|_{-2}^1 = -\frac{3}{8}\]
+\end{enumerate}
+
+\end{document}
