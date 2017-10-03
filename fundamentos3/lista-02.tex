@@ -1,0 +1,167 @@
+\documentclass[a4paper,5pt]{amsbook}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{textcomp}
+\usepackage{systeme}
+\usepackage{amssymb}
+\usepackage[]{amsmath}
+\usepackage{subcaption}
+\usepackage[inline]{enumitem}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\sen}{\,\mbox{sen}\,}
+\newcommand{\tg}{\,\mbox{tg}\,}
+\newcommand{\cosec}{\,\mbox{cosec}\,}
+\newcommand{\cotg}{\,\mbox{cotg}\,}
+\newcommand{\tr}{\,\mbox{tr}\,}
+\newcommand{\ds}{\displaystyle}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setlength{\textwidth}{16cm} %\setlength{\topmargin}{-1.3cm}
+\setlength{\textheight}{30cm}
+\setlength{\leftmargin}{1.2cm} \setlength{\rightmargin}{1.2cm}
+\setlength{\oddsidemargin}{0cm}\setlength{\evensidemargin}{0cm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \renewcommand{\baselinestretch}{1.6}
+% \renewcommand{\thefootnote}{\fnsymbol{footnote}}
+% \renewcommand{\theequation}{\thesection.\arabic{equation}}
+% \setlength{\voffset}{-50pt}
+% \numberwithin{equation}{chapter}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\thispagestyle{empty}
+\pagestyle{empty}
+\begin{minipage}[h]{0.14\textwidth}
+	\includegraphics[scale=0.24]{../ufgd.png}
+\end{minipage}
+\begin{minipage}[h]{\textwidth}
+\begin{tabular}{c}
+{{\bf UNIVERSIDADE FEDERAL DA GRANDE DOURADOS}}\\
+{{\bf Fundamentos de Matem\'{a}tica III --- Lista 2}}\\
+{{\bf Prof.\ Adriano Barbosa}}\\
+\end{tabular}
+\vspace{-0.45cm}
+%
+\end{minipage}
+
+%------------------------
+
+\vspace{1cm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   formulario  inicio  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{enumerate}
+	\vspace{0.5cm}
+	\item Efetue as divis\~oes e escreva os n\'umeros na forma alg\'ebrica:
+
+		\begin{enumerate*}
+			\item $\ds\frac{1}{2+i}$
+			\hspace{0.5cm}
+			\hspace{0.5cm}
+			\item $\ds\frac{3+4i}{3-i}$
+			\hspace{0.5cm}
+			\hspace{0.5cm}
+			\item $\ds\frac{i^3-i^2+i^{17}-i^{35}}{i^{16}-i^{13}+i^{30}}$
+			\hspace{0.5cm}
+			\hspace{0.5cm}
+			\item $\ds\frac{1+i}{{(1-i)}^2}$
+		\end{enumerate*}
+
+	\vspace{0.5cm}
+	\item Determine $x \in \mathbb{R}$ tal que:
+		\begin{enumerate}
+			\vspace{0.3cm}
+			\item $\ds\frac{2-xi}{1+2xi}$ seja imagin\'ario puro
+			\vspace{0.3cm}
+			\item $\ds\frac{1+2i}{2+xi}$ seja real
+		\end{enumerate}
+
+	\vspace{0.5cm}
+	\item Mostre que $\overline{(z^n)} = {(\overline{z})}^n$ para todo $n$ natural.
+
+	\vspace{0.5cm}
+	\item Determine $z \in \mathbb{C}$ tal que:
+
+		\begin{enumerate*}
+			\item $z^3=\overline{z}$
+			\hspace{0.5cm}
+			\hspace{0.5cm}
+			\item $z^2=i$
+			\hspace{0.5cm}
+			\hspace{0.5cm}
+			\item $z^2 = 1+\sqrt{3}i$
+		\end{enumerate*}
+
+	\vspace{0.5cm}
+	\item Calcule $z\in\mathbb{C}$ tal que $z\ \overline{z} +
+		(z-\overline{z})=13+6i$.
+
+	\vspace{0.5cm}
+	\item Use as propriedades de m\'odulo para calcular:
+		\begin{enumerate}
+			\vspace{0.3cm}
+			\item $|z_1z_2|$, onde $z_1=1-i$ e $z_2=2+2i$
+			\vspace{0.3cm}
+			\item $\ds\left|\frac{z_1}{z_2}\right|$, onde $z_1=3+3i$ e
+				$z_2=1+2i$
+			\vspace{0.3cm}
+			\item $|z^6|$, onde $z=1+\sqrt{3}i$
+		\end{enumerate}
+
+	\vspace{0.5cm}
+	\item Escreva os n\'umeros abaixo na forma trigonom\'etrica:
+
+		\begin{enumerate*}
+			\item $3+3i$
+			\hspace{0.5cm}
+			\hspace{0.5cm}
+			\item $i^3$
+			\hspace{0.5cm}
+			\hspace{0.5cm}
+			\item $2i(1-i)$
+			\hspace{0.5cm}
+			\hspace{0.5cm}
+			\item $5-5\sqrt{3}i$
+			\hspace{0.5cm}
+			\hspace{0.5cm}
+			\item $2i$
+		\end{enumerate*}
+
+	\vspace{0.5cm}
+	\item Represente no plano os n\'umeros abaixo e indique graficamente o m\'odulo
+		e o argumento principal de cada um deles
+
+		\begin{enumerate*}
+			\item $2+5i$
+			\hspace{0.5cm}
+			\hspace{0.5cm}
+			\item $-2-3i$
+			\hspace{0.5cm}
+			\hspace{0.5cm}
+			\item $1-4i$
+		\end{enumerate*}
+
+	\vspace{0.5cm}
+	\item Represente geometricamente no plano os conjuntos abaixo:
+		\begin{enumerate}
+			\item $A=\{z\in\mathbb{C}\ |\ Re(z)=0\}$
+			\item $B=\{z\in\mathbb{C}\ |\ Im(z)=0\}$
+			\item $C=\{z\in\mathbb{C}\ |\ |z|=1\}$
+			\item $D=\{z\in\mathbb{C}\ |\ Re(z)\ge 1\ e\ Im(z)\ge 2\}$
+		\end{enumerate}
+
+	\vspace{0.5cm}
+	\item Represente geometricamente no plano o conjunto dos n\'umeros complexos
+		$z$ tais que
+
+		\noindent{}$|z-(1+i)| \le 1$.
+\end{enumerate}
+
+\end{document}
