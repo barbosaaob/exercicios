@@ -1,0 +1,134 @@
+\documentclass[a4paper,5pt]{amsbook}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{textcomp}
+\usepackage{systeme}
+\usepackage{amssymb}
+\usepackage[]{amsmath}
+\usepackage{subcaption}
+\usepackage[inline]{enumitem}
+\usepackage{gensymb}
+\usepackage[utf8]{inputenc}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\renewcommand{\sin}{\,\mbox{sen}\,}
+\newcommand{\sen}{\,\mbox{sen}\,}
+\newcommand{\tg}{\,\mbox{tg}\,}
+\newcommand{\cosec}{\,\mbox{cosec}\,}
+\newcommand{\cotg}{\,\mbox{cotg}\,}
+\newcommand{\tr}{\,\mbox{tr}\,}
+\newcommand{\ds}{\displaystyle}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setlength{\textwidth}{16cm} \setlength{\topmargin}{-1.3cm}
+\setlength{\textheight}{30cm}
+\setlength{\leftmargin}{1.2cm} \setlength{\rightmargin}{1.2cm}
+\setlength{\oddsidemargin}{0cm}\setlength{\evensidemargin}{0cm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \renewcommand{\baselinestretch}{1.6}
+% \renewcommand{\thefootnote}{\fnsymbol{footnote}}
+% \renewcommand{\theequation}{\thesection.\arabic{equation}}
+% \setlength{\voffset}{-50pt}
+% \numberwithin{equation}{chapter}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\thispagestyle{empty}
+\pagestyle{empty}
+\begin{minipage}[h]{0.14\textwidth}
+    \includegraphics[scale=0.24]{../../ufgd.png}
+\end{minipage}
+\begin{minipage}[h]{\textwidth}
+    \begin{tabular}{c}
+        {{\bf UNIVERSIDADE FEDERAL DA GRANDE DOURADOS}}\\
+        {{\bf C\'{a}lculo Diferencial e Integral II --- Lista 8}}\\
+        {{\bf Prof.\ Adriano Barbosa}}\\
+    \end{tabular}
+    \vspace{-0.45cm}
+    %
+\end{minipage}
+
+%------------------------
+
+\vspace{1cm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   formulario  inicio  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{enumerate}
+        \vspace{0.5cm}
+    \item Calcule, caso exista, $\displaystyle\lim_{n\rightarrow\infty}\ x_n$, com $x_n$ igual a:
+
+        \noindent{}%
+        \begin{enumerate*}
+        \item $\ds\frac{n^3+3n+1}{4n^3+2}$
+            \hspace{0.5cm}
+            \hspace{0.5cm}
+        \item $\sqrt{n+1}-\sqrt{n}$
+            \hspace{0.5cm}
+            \hspace{0.5cm}
+        \item $\ds\sin\frac{1}{n}$
+            \hspace{0.5cm}
+            \hspace{0.5cm}
+        \item $\ds\int_1^n \frac{1}{x}\ dx$
+            \\
+            \hspace{1cm}
+        \item $\ds{\left(1+\frac{2}{n}\right)}^n$
+            \hspace{0.5cm}
+            \hspace{0.5cm}
+        \item $\ds\sum_{k=0}^n \frac{1}{2^k}$
+            \hspace{0.5cm}
+            \hspace{0.5cm}
+        \item $\ds\frac{\sin n}{n}$
+        \end{enumerate*}
+
+        \vspace{0.5cm}
+    \item Calcule, se poss\'{\i}vel, a soma das s\'eries:
+
+        \noindent{}%
+        \begin{enumerate*}
+        \item $\ds\sum_{k=1}^\infty\ds\frac{n^2}{5n^2+4}$
+            \hspace{0.3cm}
+            \hspace{0.3cm}
+        \item $\ds\sum_{k=0}^\infty e^{-k}$
+            \hspace{0.3cm}
+            \hspace{0.3cm}
+        \item $\ds1+\frac{1}{\sqrt[3]{2}}+\frac{1}{\sqrt[3]{3}}+\cdots+\frac{1}{\sqrt[3]{n}}+\cdots$
+            \hspace{0.3cm}
+            \hspace{0.3cm}
+            \\
+        \item $\ds\sum_{k=1}^\infty\ds\frac{1}{n(n+1)}$
+            [Dica: escreva a fra\c{c}\~ao como soma de fra\c{c}\~oes parciais.]
+            \\
+        \item $\ds\sum_{k=0}^\infty \ds\frac{1}{(4k+1)(4k+5)}$
+            [Dica: escreva a fra\c{c}\~ao como soma de fra\c{c}\~oes parciais.]
+        \end{enumerate*}
+
+        \vspace{0.5cm}
+    \item Determine se as s\'eries geom\'etricas s\~ao convergentes ou divergentes.
+        Calcule a soma das s\'eries convergentes.
+        \begin{enumerate}
+                \vspace{0.3cm}
+            \item $\ds4+3+\frac{9}{4}+\frac{27}{16}+\cdots$
+                \vspace{0.3cm}
+            \item $\ds2+0,5+0,125+0,03125+\cdots$
+        \end{enumerate}
+
+        \vspace{0.5cm}
+    \item Escreva $0,\overline{9900} = 0,99009900\ldots$ como uma fra\c{c}\~ao.
+
+        \vspace{0.5cm}
+    \item Calcule a soma das s\'eries
+        \begin{enumerate}
+                \vspace{0.3cm}
+            \item $\ds\left(\frac{1}{2}+\frac{1}{4}\right)+\left(\frac{1}{2^2}+\frac{1}{4^2}\right)+\left(\frac{1}{2^3}+\frac{1}{4^3}\right)+\cdots$
+                \vspace{0.3cm}
+            \item $\ds\sum_{k=1}^\infty \left(\frac{1}{5^k} - \frac{1}{k(k+1)}\right)$
+        \end{enumerate}
+\end{enumerate}
+\end{document}
