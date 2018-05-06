@@ -1,0 +1,141 @@
+\documentclass[a4paper,5pt]{amsbook}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{textcomp}
+\usepackage{systeme}
+\usepackage{amssymb}
+\usepackage[]{amsmath}
+\usepackage{subcaption}
+\usepackage[inline]{enumitem}
+\usepackage{gensymb}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\sen}{\,\mbox{sen}\,}
+\newcommand{\tg}{\,\mbox{tg}\,}
+\newcommand{\cosec}{\,\mbox{cosec}\,}
+\newcommand{\cotg}{\,\mbox{cotg}\,}
+\newcommand{\tr}{\,\mbox{tr}\,}
+\newcommand{\ds}{\displaystyle}
+\newcommand{\ra}{\rightarrow}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setlength{\textwidth}{16cm} \setlength{\topmargin}{-1.7cm}
+\setlength{\textheight}{25cm}
+\setlength{\leftmargin}{1.2cm} \setlength{\rightmargin}{1.2cm}
+\setlength{\oddsidemargin}{0cm}\setlength{\evensidemargin}{0cm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \renewcommand{\baselinestretch}{1.6}
+% \renewcommand{\thefootnote}{\fnsymbol{footnote}}
+% \renewcommand{\theequation}{\thesection.\arabic{equation}}
+% \setlength{\voffset}{-50pt}
+% \numberwithin{equation}{chapter}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\thispagestyle{empty}
+\pagestyle{empty}
+\begin{minipage}[h]{0.14\textwidth}
+	\includegraphics[scale=0.24]{../ufgd.png}
+\end{minipage}
+\begin{minipage}[h]{\textwidth}
+\begin{tabular}{c}
+{{\bf UNIVERSIDADE FEDERAL DA GRANDE DOURADOS}}\\
+{{\bf C\'alculo Diferencial e Integral --- Lista 8}}\\
+{{\bf Prof.\ Adriano Barbosa}}\\
+\end{tabular}
+\vspace{-0.45cm}
+%
+\end{minipage}
+
+%------------------------
+
+\vspace{1cm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   formulario  inicio  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{enumerate}
+    \vspace{0.5cm}
+    \item Escreva as fun\c{c}\~oes abaixo na forma $f(g(x))$ identificando as fun\c{c}\~oes
+        $f$ e $g$:
+
+        \begin{enumerate*}
+            \item $y=\sqrt[3]{1+4x}$
+            \hspace{1cm}
+            \hspace{1cm}
+            \item $y=\tg(\pi x)$
+            \hspace{1cm}
+            \hspace{1cm}
+            \item $y=\sqrt{\sen{x}}$
+        \end{enumerate*}
+
+    \vspace{0.5cm}
+    \item Calcule a derivada das fun\c{c}\~oes:
+        \begin{enumerate}
+            \vspace{0.3cm}
+            \item $F(x)={(x^4+3x^2-2)}^5$
+            \vspace{0.3cm}
+            \item $y=\sen{(x \cos{x})}$
+            \vspace{0.3cm}
+            \item $y=\sen\sqrt{1+x^2}$
+            \vspace{0.3cm}
+            \item $y=\sqrt{x+\sqrt{x}}$
+            \vspace{0.3cm}
+            \item $F(x)=\cos\sqrt{\sen{(\tg{(\pi x)})}}$
+        \end{enumerate}
+
+    \vspace{0.5cm}
+    \item Seja $r(x)=f(g(h(x)))$, onde $h(1)=2$, $g(2)=3$, $h'(1)=4$, $g'(2)=5$
+        e $f'(3)=6$. Calcule $r'(1)$.
+
+    \vspace{0.5cm}
+    \item Se $g$ \'e uma fun\c{c}\~ao duas vezes deriv\'avel e $f(x)=xg(x^2)$, calcule
+        $f''$ em fun\c{c}\~ao de $g$, $g'$ e $g''$.
+
+    \vspace{0.5cm}
+    \item Calcule $\ds\frac{dy}{dx}$ atrav\'es de deriva\c{c}\~ao impl\'{\i}cita:
+        \begin{enumerate}
+            \vspace{0.3cm}
+            \item $x^3+y^3=1$
+            \vspace{0.3cm}
+            \item $x^4(x+y)=y^2(3x-y)$
+            \vspace{0.3cm}
+            \item $y\cos{x}=x^2+y^2$
+            \vspace{0.3cm}
+            \item $2\sqrt{x} + \sqrt{y}=3$
+        \end{enumerate}
+
+    \vspace{0.5cm}
+    \item Derive as fun\c{c}\~oes:
+        \begin{enumerate}
+            \vspace{0.3cm}
+            \item $f(x)=e^5$
+            \vspace{0.3cm}
+            \item $f(x)=(x^3+2x)e^x$
+            \vspace{0.3cm}
+            \item $y=e^{ax^3}$
+            \vspace{0.3cm}
+            \item $f(x)=x\ln{x}-x$
+            \vspace{0.3cm}
+            \item $f(x)=\sen{(\ln{x})}$
+            \vspace{0.3cm}
+            \item $f(x)=\ln{\ds\frac{1}{x}}$
+            \vspace{0.3cm}
+            \item $f(x)=\log_{10}(x^3+1)$
+            \vspace{0.3cm}
+            \item $y=2x\log_{10}\sqrt{x}$
+            \vspace{0.3cm}
+            \item $y=\log_2(e^{-x}\cos{\pi x})$
+            \vspace{0.3cm}
+            \item $f(t)=10^{\sqrt{t}}$
+            \vspace{0.3cm}
+            \item $F(t)=3^{\cos{2t}}$
+        \end{enumerate}
+\end{enumerate}
+
+\end{document}
