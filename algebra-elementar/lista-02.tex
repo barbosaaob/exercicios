@@ -1,0 +1,113 @@
+\documentclass[a4paper,5pt]{amsbook}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\usepackage{booktabs}
+\usepackage{graphicx}
+%\usepackage{multicol}
+%\usepackage{textcomp}
+%\usepackage{systeme}
+%\usepackage{amssymb}
+%\usepackage[]{amsmath}
+%\usepackage{subcaption}
+\usepackage[inline]{enumitem}
+\usepackage{gensymb}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\sen}{\,\mbox{sen}\,}
+\newcommand{\tg}{\,\mbox{tg}\,}
+\newcommand{\cosec}{\,\mbox{cosec}\,}
+\newcommand{\cotg}{\,\mbox{cotg}\,}
+\newcommand{\tr}{\,\mbox{tr}\,}
+\newcommand{\ds}{\displaystyle}
+\newcommand{\ra}{\rightarrow}
+\newcommand{\lra}{\leftrightarrow}
+\newcommand{\Ra}{\Rightarrow}
+\newcommand{\LRa}{\Leftrightarrow}
+\renewcommand{\lnot}{\sim}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setlength{\textwidth}{16cm} \setlength{\topmargin}{-1.7cm}
+\setlength{\textheight}{25cm}
+\setlength{\leftmargin}{1.2cm} \setlength{\rightmargin}{1.2cm}
+\setlength{\oddsidemargin}{0cm}\setlength{\evensidemargin}{0cm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \renewcommand{\baselinestretch}{1.6}
+% \renewcommand{\thefootnote}{\fnsymbol{footnote}}
+% \renewcommand{\theequation}{\thesection.\arabic{equation}}
+% \setlength{\voffset}{-50pt}
+% \numberwithin{equation}{chapter}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\thispagestyle{empty}
+\pagestyle{empty}
+\begin{minipage}[h]{0.14\textwidth}
+	\includegraphics[scale=0.24]{../ufgd.png}
+\end{minipage}
+\begin{minipage}[h]{\textwidth}
+\begin{tabular}{c}
+{{\bf UNIVERSIDADE FEDERAL DA GRANDE DOURADOS}}\\
+{{\bf \'Algebra Elementar --- Lista 2}}\\
+{{\bf Prof.\ Adriano Barbosa}}\\
+\end{tabular}
+\vspace{-0.45cm}
+%
+\end{minipage}
+
+%------------------------
+
+\vspace{1cm}
+%%%%%%%%%%%%%%%%%%%%%%%%%   formulario  inicio  %%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{enumerate}
+    \vspace{0.5cm}
+    \item Construa as tabelas verdade das proposi\c{c}\~oes abaixo:
+        \begin{enumerate}
+            \item $\lnot(p\lor \lnot q)$
+            \item $p\land q \ra p\lor q$
+            \item $(p\lra \lnot q)\lra q \ra p$
+            \item $(p\lra \lnot q) \ra \lnot p \land q$
+        \end{enumerate}
+
+    \vspace{0.5cm}
+    \item Determine se as proposi\c{c}\~oes s\~ao tautologias ou contradi\c{c}\~oes:
+        \begin{enumerate}
+            \item $(p\ra p) \lor (p\ra \lnot p)$
+            \item $(p\ra q) \land \lnot q \ra \lnot p$
+            \item $p\ra (p\ra q \land \lnot q)$
+            \item $\lnot(p \lra q) \land p \ra q$
+        \end{enumerate}
+
+    \vspace{0.5cm}
+    \item Verifique as validade das implica\c{c}\~oes abaixo:
+        \begin{enumerate}
+            \item Regra do silogismo disjuntivo: $(p\lor q)\land \lnot p \Ra q$
+            \item Regra modus ponens: $(p\ra q)\land p \Ra q$
+            \item Regra modus tollens: $(p\ra q) \lor \lnot q \Ra \lnot p$
+            \item Regra do silogismos hipot\'etico: $(p\ra q)\land(q\ra r)\Ra p\ra r$
+        \end{enumerate}
+
+    \vspace{0.5cm}
+    \item Verifique a validade das equival\^encias:
+        \begin{enumerate}
+            \item Regra de absor\c{c}\~ao: $p\ra p\land q \LRa p\ra q$
+            \item $p\land(p\lor q)\LRa p$
+            \item $p\lra p\land q \LRa p\ra q$
+            \item $(p\ra q)\land(p\ra r)\LRa p\ra q\land r$
+            \item Regra de exporta\c{c}\~ao-importa\c{c}\~ao: $p\land q \ra r\LRa p\ra(q\ra r)$
+        \end{enumerate}
+
+    \vspace{0.5cm}
+    \item Escreva a rec\'{\i}proca, contr\'aria e contrapositiva das proposi\c{c}\~oes abaixo:
+        \begin{enumerate}
+            \item Se Jo\~ao \'e rico, ent\~ao tem um carro caro.
+            \item Se chover, ent\~ao Ana n\~ao vai a praia.
+            \item Se eu n\~ao for ao cinema, ent\~ao irei ao teatro.
+        \end{enumerate}
+\end{enumerate}
+
+\end{document}
