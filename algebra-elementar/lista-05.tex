@@ -1,0 +1,104 @@
+\documentclass[a4paper,5pt]{amsbook}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\usepackage{booktabs}
+\usepackage{graphicx}
+%\usepackage{multicol}
+%\usepackage{textcomp}
+%\usepackage{systeme}
+%\usepackage{amssymb}
+%\usepackage[]{amsmath}
+%\usepackage{subcaption}
+\usepackage[inline]{enumitem}
+\usepackage{gensymb}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\sen}{\,\mbox{sen}\,}
+\newcommand{\tg}{\,\mbox{tg}\,}
+\newcommand{\cosec}{\,\mbox{cosec}\,}
+\newcommand{\cotg}{\,\mbox{cotg}\,}
+\newcommand{\tr}{\,\mbox{tr}\,}
+\newcommand{\ds}{\displaystyle}
+\newcommand{\ra}{\rightarrow}
+\newcommand{\lra}{\leftrightarrow}
+\newcommand{\Ra}{\Rightarrow}
+\newcommand{\LRa}{\Leftrightarrow}
+\renewcommand{\lnot}{\sim}
+\newcommand{\larg}{\vdash}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setlength{\textwidth}{16cm} \setlength{\topmargin}{-1.7cm}
+\setlength{\textheight}{25cm}
+\setlength{\leftmargin}{1.2cm} \setlength{\rightmargin}{1.2cm}
+\setlength{\oddsidemargin}{0cm}\setlength{\evensidemargin}{0cm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \renewcommand{\baselinestretch}{1.6}
+% \renewcommand{\thefootnote}{\fnsymbol{footnote}}
+% \renewcommand{\theequation}{\thesection.\arabic{equation}}
+% \setlength{\voffset}{-50pt}
+% \numberwithin{equation}{chapter}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\thispagestyle{empty}
+\pagestyle{empty}
+\begin{minipage}[h]{0.14\textwidth}
+	\includegraphics[scale=0.24]{../ufgd.png}
+\end{minipage}
+\begin{minipage}[h]{\textwidth}
+\begin{tabular}{c}
+{{\bf UNIVERSIDADE FEDERAL DA GRANDE DOURADOS}}\\
+{{\bf \'Algebra Elementar --- Lista 5}}\\
+{{\bf Prof.\ Adriano Barbosa}}\\
+\end{tabular}
+\vspace{-0.45cm}
+%
+\end{minipage}
+
+%------------------------
+
+\vspace{1cm}
+%%%%%%%%%%%%%%%%%%%%%%%%%   formulario  inicio  %%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{enumerate}
+    \vspace{0.5cm}
+    \item Construa a tabela verdade e determine se os argumentos abaixo s\~ao v\'alidos:
+        \begin{enumerate}
+            \item $P \land Q, P \ra \lnot Q \larg P \land \lnot Q$
+            \item $P, \lnot P \ra Q \larg \lnot Q$
+            %\item $P \land Q, R \ra P \larg Q \lor R$
+            %\item $\lnot P, Q \ra P \land R \larg \lnot Q$
+            \item $P \land \lnot Q, \lnot Q \larg P$
+            \item $P \ra Q, Q \ra R, R \larg Q$
+        \end{enumerate}
+    
+    \vspace{0.5cm}
+    \item Use o m\'etodo dedutivo para provar os argumentos abaixo.
+        \begin{enumerate}
+            \item $P \larg Q \ra P$
+            \item $A \land B \larg A \lor B$
+            \item $J \ra K, J \ra L \larg J \ra K \land L$
+            \item $C \lor (D \land E), \lnot E \larg C$
+        \end{enumerate}
+    
+    \vspace{0.5cm}
+    \item Deduza uma conclus\~ao v\'alida para os argumentos abaixo.
+        \begin{enumerate}
+            \item Se Ana receber o e-mail (E), ela comparecer\'a (C), pois est\'a
+            interessada (I).  Mesmo n\~ao comparecendo, Ana est\'a interessada.
+            Portanto, (?).
+            \item Se a reserva de ouro permanecer fixa (F) e o gasto de ouro
+            aumentar (A), ent\~ao o pre\c{c}o do ouro ir\'a subir (S). O pre\c{c}o do ouro n\~ao
+            sobe. Portando, (?).
+            \item Se Jo\~ao vai ao parque (P), ent\~ao Jo\~ao veste jeans (V). Se Jo\~ao
+            veste jeans, ent\~ao Jo\~ao n\~ao vai ao jantar (J) nem a balada (B). Jo\~ao
+            vai a balada.  Se Jo\~ao n\~ao vai ao jantar, ent\~ao ele tem o ingresso (I),
+            mas ele n\~ao tem o ingresso. Portando, (?).
+        \end{enumerate}
+\end{enumerate}
+
+\end{document}
