@@ -1,0 +1,130 @@
+\documentclass[a4paper,5pt]{amsbook}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\usepackage{booktabs}
+\usepackage{graphicx}
+%\usepackage{multicol}
+%\usepackage{textcomp}
+%\usepackage{systeme}
+%\usepackage{amssymb}
+%\usepackage[]{amsmath}
+%\usepackage{subcaption}
+\usepackage[inline]{enumitem}
+\usepackage{gensymb}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\sen}{\,\mbox{sen}\,}
+\newcommand{\tg}{\,\mbox{tg}\,}
+\newcommand{\cosec}{\,\mbox{cosec}\,}
+\newcommand{\cotg}{\,\mbox{cotg}\,}
+\newcommand{\tr}{\,\mbox{tr}\,}
+\newcommand{\ds}{\displaystyle}
+\newcommand{\ra}{\rightarrow}
+\newcommand{\lra}{\leftrightarrow}
+\newcommand{\Ra}{\Rightarrow}
+\newcommand{\LRa}{\Leftrightarrow}
+\renewcommand{\lnot}{\sim}
+\newcommand{\larg}{\vdash}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setlength{\textwidth}{16cm} \setlength{\topmargin}{-1.7cm}
+\setlength{\textheight}{25cm}
+\setlength{\leftmargin}{1.2cm} \setlength{\rightmargin}{1.2cm}
+\setlength{\oddsidemargin}{0cm}\setlength{\evensidemargin}{0cm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \renewcommand{\baselinestretch}{1.6}
+% \renewcommand{\thefootnote}{\fnsymbol{footnote}}
+% \renewcommand{\theequation}{\thesection.\arabic{equation}}
+% \setlength{\voffset}{-50pt}
+% \numberwithin{equation}{chapter}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\thispagestyle{empty}
+\pagestyle{empty}
+\begin{minipage}[h]{0.14\textwidth}
+	\includegraphics[scale=0.24]{../ufgd.png}
+\end{minipage}
+\begin{minipage}[h]{\textwidth}
+\begin{tabular}{c}
+{{\bf UNIVERSIDADE FEDERAL DA GRANDE DOURADOS}}\\
+{{\bf \'Algebra Elementar --- Lista 6}}\\
+{{\bf Prof.\ Adriano Barbosa}}\\
+\end{tabular}
+\vspace{-0.45cm}
+%
+\end{minipage}
+
+%------------------------
+
+\vspace{1cm}
+%%%%%%%%%%%%%%%%%%%%%%%%%   formulario  inicio  %%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{enumerate}
+    \vspace{0.5cm}
+    \item Determine o conjunto verdade das seguintes senten\c{c}as abertas:
+        \begin{enumerate}
+            \item $x\in\mathbb{N}$, $x$ \'e um n\'umero primo par.
+            \item $x\in\mathbb{Z}$, $x$ \'e um m\'utiplo de $4$.
+            \item $x\in\mathbb{Z}$, $x<5$.
+            \item $x\in\mathbb{Z}$, $x^2+2x-1=0$.
+            \item $x\in\mathbb{R}$, $x^2+2x-1=0$.
+        \end{enumerate}
+
+%    \vspace{0.5cm}
+%    \item Seja $T$ o conjunto de todos os tri\^angulos. Dadas as senten\c{c}as
+%    abertas: $E(x):$ $x$ \'e um tri\^angulo equil\'atero, $I(x):$ $x$ \'e um tri\^angulo
+%    is\'osceles e $R(x):$ $x$ \'e um tri\^angulo reto. Escreva simbolicamente as
+%    senten\c{c}as abaixo usando um quantificador e determine seu valor l\'ogico.
+%        \begin{enumerate}
+%            \item Todos os tri\^angulos is\'osceles s\~ao tri\^angulos equil\'ateros.
+%            \item Todos os tri\^angulos equil\'ateros s\~ao tri\^angulos is\'osceles.
+%            \item Algum tri\^angulo is\'osceles n\~ao \'e um tri\^angulo reto.
+%            \item Nenhum tri\^angulo reto \'e um tri\^angulo is\'osceles.
+%            \item Nenhum tri\^angulo equil\'atero \'e um tri\^angulo reto.
+%        \end{enumerate}
+
+    \vspace{0.5cm}
+    \item Determine se as senten\c{c}as abaixo s\~ao verdadeiras ou falsas.
+    Justifique sua resposta ou d\^e um contraexemplo.
+        \begin{enumerate}
+            \item Existem n\'umeros naturais $m$ e $n$ tais que $m$ \'e maior que $n$.
+            \item $m$ \'e maior que $n$ para todos os n\'umeros naturais $m$ e $n$.
+            \item Para todo inteiro $x$ existe um inteiro $y$ tal que $x=2y$.
+            \item Existe u \'unico n\'umero racional $x$ tal que $x+y=0$, para
+            todos os n\'umeros racionais $y$.
+            \item Para todo n\'umero real positivo $x$ existe um n\'umero natural
+            $n$ tal que $\ds\frac{1}{n}<x$.
+        \end{enumerate}
+
+    \vspace{0.5cm}
+    \item Apresnete uma prova direta para as proposi\c{c}\~oes abaixo:
+        \begin{enumerate}
+            \item Se $m$ \'e um inteiro par, ent\~ao $m+1$ \'e um inteiro \'{\i}mpar.
+            \item Se $m$ e $n$ s\~ao ambos inteiros pares, ent\~ao $m+n$ \'e um
+            inteiro par.
+        \end{enumerate}
+
+    \vspace{0.5cm}
+    \item Apresnete uma prova pela forma contrapositiva para as proposi\c{c}\~oes abaixo:
+        \begin{enumerate}
+            \item Se $m$ \'e um inteiro \'{\i}mpar, ent\~ao $m+1$ \'e um inteiro par.
+            \item Se $m+n$ \'e um inteiro par, ent\~ao $m$ e $n$ s\~ao ambos
+            inteiros \'{\i}mpas ou ambos inteiros pares.
+        \end{enumerate}
+
+    \vspace{0.5cm}
+    \item Apresnete uma por contradi\c{c}\~ao para as proposi\c{c}\~oes abaixo:
+        \begin{enumerate}
+            \item Se $mn$ \'e um inteiro \'{\i}mpar, ent\~ao $m$ e $n$ s\~ao ambos
+            inteiros \'{\i}mpares.
+            \item Sejam $m$ e $n$ n\'umeros inteiros. Se $m-n$ \'e um
+            inteiro \'{\i}mpar, ent\~ao $m+n$ \'e um inteiro \'{\i}mpar.
+        \end{enumerate}
+\end{enumerate}
+
+\end{document}
