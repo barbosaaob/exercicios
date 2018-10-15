@@ -1,0 +1,114 @@
+\documentclass[a4paper,5pt]{amsbook}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\usepackage{booktabs}
+\usepackage{graphicx}
+%\usepackage{multicol}
+%\usepackage{textcomp}
+%\usepackage{systeme}
+\usepackage{amssymb}
+%\usepackage[]{amsmath}
+%\usepackage{subcaption}
+\usepackage[inline]{enumitem}
+\usepackage{gensymb}
+\usepackage{tasks}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\sen}{\,\mbox{sen}\,}
+\newcommand{\tg}{\,\mbox{tg}\,}
+\newcommand{\cosec}{\,\mbox{cosec}\,}
+\newcommand{\cotg}{\,\mbox{cotg}\,}
+\newcommand{\tr}{\,\mbox{tr}\,}
+\newcommand{\ds}{\displaystyle}
+\newcommand{\ra}{\rightarrow}
+\newcommand{\lra}{\leftrightarrow}
+\newcommand{\Ra}{\Rightarrow}
+\newcommand{\LRa}{\Leftrightarrow}
+\renewcommand{\lnot}{\sim}
+\newcommand{\larg}{\vdash}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setlength{\textwidth}{16cm} \setlength{\topmargin}{-1.7cm}
+\setlength{\textheight}{25cm}
+\setlength{\leftmargin}{1.2cm} \setlength{\rightmargin}{1.2cm}
+\setlength{\oddsidemargin}{0cm}\setlength{\evensidemargin}{0cm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \renewcommand{\baselinestretch}{1.6}
+% \renewcommand{\thefootnote}{\fnsymbol{footnote}}
+% \renewcommand{\theequation}{\thesection.\arabic{equation}}
+% \setlength{\voffset}{-50pt}
+% \numberwithin{equation}{chapter}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\thispagestyle{empty}
+\pagestyle{empty}
+\begin{minipage}[h]{0.14\textwidth}
+	\includegraphics[scale=0.24]{../ufgd.png}
+\end{minipage}
+\begin{minipage}[h]{\textwidth}
+\begin{tabular}{c}
+{{\bf UNIVERSIDADE FEDERAL DA GRANDE DOURADOS}}\\
+{{\bf \'Algebra Elementar --- Lista 9}}\\
+{{\bf Prof.\ Adriano Barbosa}}\\
+\end{tabular}
+\vspace{-0.45cm}
+%
+\end{minipage}
+
+%------------------------
+
+\vspace{1cm}
+%%%%%%%%%%%%%%%%%%%%%%%%%   formulario  inicio  %%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{enumerate}
+    \vspace{0.5cm}
+    \item Observe o c\'alculo abaixo:
+        \begin{eqnarray*}
+                        & \sqrt{6-x}+x=0 \\
+            \Rightarrow & \sqrt{6-x} = -x \\
+            \Rightarrow & {(\sqrt{6-x})}^2 = (-x)^2 \\
+            \Rightarrow & 6-x = x^2 \\
+            \Rightarrow & x^2 + x - 6 = 0 \\
+            \Rightarrow & x = 2 \mbox{ ou } x = -3 \\
+            \Rightarrow & x \in \{-3, 2\}
+        \end{eqnarray*}
+    Podemos concluir que o conjunto solu\c{c}\~ao da equa\c{c}\~ao $\sqrt{6-x}+x=0$ \'e o
+    conjunto $\{-3,2\}$? Justifique sua resposta.
+
+    \vspace{0.5cm}
+    \item Sejam $U = \{a,b,c,d,e,f\}$, $A = \{a,b,c\}$, $B = \{c,d,e\}$, $C =
+    \{e,f\}$. Calcule:
+        \begin{enumerate}
+            \item $A^C$
+            \item $B^C$
+            \item $A\cup B$
+            \item $A^C \cup B^C$
+            \item $A \cap B$
+            \item $A^C \cap B^C$
+            \item $(A\cup B)^C$
+            \item $(A\cap B)^C$
+            \item $(A\cap B)\cup C$
+            \item $A\cap (B\cup C)$
+            \item $(A\cap C)\cup (A\cap C)$
+            \item $(A\cup C)\cap (A\cup C)$
+        \end{enumerate}
+
+     \vspace{0.5cm}
+     \item Mostre que:
+        \begin{enumerate}
+            %\item $A\subset A\cup B$
+            %\item $A\cap B \subset A$
+            \item $A\subset B \LRa A\cup B = B$
+            \item $A\subset B \LRa A\cap B = A$
+            \item $A\subset B \LRa B^C\subset A^C$
+            \item $(A\cup B)^C = A^C \cap B^C$
+            \item $(A\cap B)^C = A^C \cup B^C$
+        \end{enumerate}
+\end{enumerate}
+
+\end{document}
