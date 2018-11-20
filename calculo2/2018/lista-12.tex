@@ -1,0 +1,92 @@
+\documentclass[a4paper,5pt]{amsbook}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{textcomp}
+\usepackage{systeme}
+\usepackage{amssymb}
+\usepackage[]{amsmath}
+\usepackage{subcaption}
+\usepackage[inline]{enumitem}
+\usepackage{gensymb}
+\usepackage[utf8]{inputenc}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\renewcommand{\sin}{\,\mbox{sen}\,}
+\newcommand{\sen}{\,\mbox{sen}\,}
+\newcommand{\tg}{\,\mbox{tg}\,}
+\newcommand{\cosec}{\,\mbox{cosec}\,}
+\newcommand{\cotg}{\,\mbox{cotg}\,}
+\newcommand{\tr}{\,\mbox{tr}\,}
+\newcommand{\ds}{\displaystyle}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setlength{\textwidth}{16cm} \setlength{\topmargin}{-1.3cm}
+\setlength{\textheight}{30cm}
+\setlength{\leftmargin}{1.2cm} \setlength{\rightmargin}{1.2cm}
+\setlength{\oddsidemargin}{0cm}\setlength{\evensidemargin}{0cm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \renewcommand{\baselinestretch}{1.6}
+% \renewcommand{\thefootnote}{\fnsymbol{footnote}}
+% \renewcommand{\theequation}{\thesection.\arabic{equation}}
+% \setlength{\voffset}{-50pt}
+% \numberwithin{equation}{chapter}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\thispagestyle{empty}
+\pagestyle{empty}
+\begin{minipage}[h]{0.14\textwidth}
+    \includegraphics[scale=0.24]{../../ufgd.png}
+\end{minipage}
+\begin{minipage}[h]{\textwidth}
+    \begin{tabular}{c}
+        {{\bf UNIVERSIDADE FEDERAL DA GRANDE DOURADOS}}\\
+        {{\bf C\'{a}lculo Diferencial e Integral II --- Lista 12}}\\
+        {{\bf Prof.\ Adriano Barbosa}}\\
+    \end{tabular}
+    \vspace{-0.45cm}
+    %
+\end{minipage}
+
+%------------------------
+
+\vspace{1cm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   formulario  inicio  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{enumerate}
+    \setlength\itemsep{0.5cm}
+    \item Determine para quais valores de $x\in\mathbb{R}$ as s\'eries s\~ao
+    convergentes
+    	\begin{enumerate}
+    		\item $\ds\sum_{n=1}^\infty (-1)^n nx^n$
+    		\item $\ds\sum_{n=1}^\infty \frac{x^n}{n3^n}$
+    		\item $\ds\sum_{n=1}^\infty \frac{3^n(x+4)^n}{\sqrt{n}}$
+    		\item $\ds\sum_{n=0}^\infty \frac{n(x+2)^n}{3^{n+1}}$
+    		\item $\ds\sum_{n=1}^\infty \frac{(x-2)^n}{n^n}$
+    		\item $\ds\sum_{n=1}^\infty n!(2x-1)^n$
+    	\end{enumerate}
+    
+    \item
+    	\begin{enumerate}
+            \item Escreva as fun\c{c}\~oes $\sin x$ e $\cos x$ como s\'erie de
+            Maclaurin e encontre seu raio e intervalo de converg\^encia.
+            \item Utilize o item $(a)$ e a s\'erie de Maclaurin da fun\c{c}\~ao $e^x$
+            para verificar a F\'ormula de Euler: $e^{ix} = \cos x + i\ \sin x$, onde
+            $i$ \'e a unidade imagin\'aria.
+    	\end{enumerate}
+    
+    \item Encontre a s\'erie de Taylor das fun\c{c}\~oes abaixo centradas no valor dado
+    	\begin{enumerate}
+    		\item $f(x) = x^4 - 3x^2 + 1$, $a = 1$
+    		\item $f(x) = \ln x$, $a = 2$
+            \item $f(x) = \ds\frac{1}{x}$, $a=-3$
+    	\end{enumerate}
+\end{enumerate}
+\end{document}
