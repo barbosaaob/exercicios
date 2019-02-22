@@ -1,0 +1,90 @@
+\documentclass[a4paper,5pt]{amsbook}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{textcomp}
+\usepackage{systeme}
+\usepackage{amssymb}
+\usepackage[]{amsmath}
+\usepackage{subcaption}
+\usepackage[inline]{enumitem}
+\usepackage{gensymb}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\sen}{\,\mbox{sen}}
+\newcommand{\tg}{\,\mbox{tg}\,}
+\newcommand{\cosec}{\,\mbox{cosec}\,}
+\newcommand{\cotg}{\,\mbox{cotg}\,}
+\newcommand{\tr}{\,\mbox{tr}\,}
+\newcommand{\ds}{\displaystyle}
+\newcommand{\ra}{\rightarrow}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setlength{\textwidth}{16cm} %\setlength{\topmargin}{-1.3cm}
+\setlength{\textheight}{25cm}
+\setlength{\leftmargin}{1.2cm} \setlength{\rightmargin}{1.2cm}
+\setlength{\oddsidemargin}{0cm}\setlength{\evensidemargin}{0cm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \renewcommand{\baselinestretch}{1.6}
+% \renewcommand{\thefootnote}{\fnsymbol{footnote}}
+% \renewcommand{\theequation}{\thesection.\arabic{equation}}
+% \setlength{\voffset}{-50pt}
+% \numberwithin{equation}{chapter}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\thispagestyle{empty}
+\pagestyle{empty}
+\begin{minipage}[h]{0.14\textwidth}
+	\includegraphics[scale=0.24]{../../ufgd.png}
+\end{minipage}
+\begin{minipage}[h]{\textwidth}
+\begin{tabular}{c}
+{{\bf UNIVERSIDADE FEDERAL DA GRANDE DOURADOS}}\\
+{{\bf C\'alculo Diferencial e Integral III --- Lista 2}}\\
+{{\bf Prof.\ Adriano Barbosa}}\\
+\end{tabular}
+\vspace{-0.45cm}
+%
+\end{minipage}
+
+%------------------------
+
+\vspace{1cm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   formulario  inicio  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{enumerate}
+    \setlength\itemsep{0.5cm}
+    \item Use uma tabela de valores de $f(x,y)$ para $(x,y)$ pr\'oximos da origem
+    e estime o valor de $\ds\lim_{(x,y)\ra(0,0)} f(x,y)$ para as fun\c{c}\~oes
+    abaixo:
+        \begin{enumerate}
+            \setlength\itemsep{0.2cm}
+            \item $f(x,y) = \ds\frac{x^2y^3+x^3y^2-5}{2-xy}$
+            \item $f(x,y) = \ds\frac{2xy}{x^2+2y^2}$
+        \end{enumerate}
+
+    \item Se $\ds\lim_{(x,y)\ra(3,1)} f(x,y) = 6$, o que podemos dizer sobre o
+    valor de $f(3,1)$? E se $f$ for cont\'{\i}nua?
+
+    \item Determine o conjunto de pontos onde as fun\c{c}\~oes s\~ao cont\'{\i}nuas:
+        \begin{enumerate}
+            \setlength\itemsep{0.2cm}
+            \item $f(x,y) = \ds\frac{xy}{1+e^{x-y}}$
+            \item $f(x,y) = \ds\frac{1+x^2+y^2}{1-x^2-y^2}$
+            \item $f(x,y) = \ln{(x^2+y^2-4)}$
+            \item $f(x,y) = \sqrt{y-x^2}\ln{z}$
+            \item $f(x,y) = \left\{\begin{array}{cl}
+                \ds\frac{x^2y^3}{2x^2+y^2}, & \text{ se } (x,y)\neq(0,0) \\
+                1, & \text{ se } (x,y)=(0,0)
+                \end{array}\right.$
+        \end{enumerate}
+\end{enumerate}
+
+\end{document}
