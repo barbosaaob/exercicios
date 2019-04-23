@@ -1,0 +1,96 @@
+\documentclass[a4paper,5pt]{amsbook}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{textcomp}
+\usepackage{systeme}
+\usepackage{amssymb}
+\usepackage[]{amsmath}
+\usepackage{subcaption}
+\usepackage[inline]{enumitem}
+\usepackage{gensymb}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\sen}{\,\mbox{sen}}
+\newcommand{\tg}{\,\mbox{tg}\,}
+\newcommand{\cosec}{\,\mbox{cosec}\,}
+\newcommand{\cotg}{\,\mbox{cotg}\,}
+\newcommand{\tr}{\,\mbox{tr}\,}
+\newcommand{\ds}{\displaystyle}
+\newcommand{\ra}{\rightarrow}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setlength{\textwidth}{16cm} %\setlength{\topmargin}{-1.3cm}
+\setlength{\textheight}{25cm}
+\setlength{\leftmargin}{1.2cm} \setlength{\rightmargin}{1.2cm}
+\setlength{\oddsidemargin}{0cm}\setlength{\evensidemargin}{0cm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \renewcommand{\baselinestretch}{1.6}
+% \renewcommand{\thefootnote}{\fnsymbol{footnote}}
+% \renewcommand{\theequation}{\thesection.\arabic{equation}}
+% \setlength{\voffset}{-50pt}
+% \numberwithin{equation}{chapter}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\thispagestyle{empty}
+\pagestyle{empty}
+\begin{minipage}[h]{0.14\textwidth}
+	\includegraphics[scale=0.24]{../../ufgd.png}
+\end{minipage}
+\begin{minipage}[h]{\textwidth}
+\begin{tabular}{c}
+{{\bf UNIVERSIDADE FEDERAL DA GRANDE DOURADOS}}\\
+{{\bf C\'alculo Diferencial e Integral III --- Lista 8}}\\
+{{\bf Prof.\ Adriano Barbosa}}\\
+\end{tabular}
+\vspace{-0.45cm}
+%
+\end{minipage}
+
+%------------------------
+
+\vspace{1cm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   formulario  inicio  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{enumerate}
+    \setlength\itemsep{0.5cm}
+    \item Calcule as integrais iteradas.
+        \begin{enumerate}
+            \setlength\itemsep{0.3cm}
+            \item $\ds\int_0^4\int_0^{\sqrt{y}} xy^2\ dxdy$
+            \item $\ds\int_0^1\int_{x^2}^x 1+2y\ dydx$
+            \item $\ds\int_0^1\int_0^{x^2} \cos{(x^2)}\ dydx$
+        \end{enumerate}
+
+    \item Calcule a integral dupla.
+        \begin{enumerate}
+            \setlength\itemsep{0.3cm}
+            \item $\ds\iint_D \sen{(y^2)}\ dA$, $D=\{(x,y)\ |\ 0\le x\le 1, x\le
+            y\le 1\}$
+            \item $\ds\iint_D \sen{(y^2)}\ dA$, $D=\{(x,y)\ |\ 0\le y\le 1,
+            0\le x\le y\}$
+            \item $\ds\iint_D x^2+y^2\ dA$, $D=\{(x,y)\ |\ 0\le x\le 2, x^2\le
+            y\le 2x\}$
+            \item $\ds\iint_D x^2\ dA$, $D=\{(x,y)\ |\ 1\le x\le e, 0\le y\le
+            \ln{x}\}$
+        \end{enumerate}
+
+    \item Expresse $D$ como uma regi\~ao do tipo I e tamb\'em do tipo II. Calcule a
+    integral dupla das duas formas.
+        \begin{enumerate}
+            \setlength\itemsep{0.3cm}
+            \item $\ds\iint_D x\ dA$, $D$ \'e limitada pelas retas $y=x$, $y=0$ e
+            $x=1$.
+            \item $\ds\iint_D xy\ dA$, $D$ \'e limitada pelas curvas $y=x^2$,
+            $y=3x$.
+        \end{enumerate}
+\end{enumerate}
+
+\end{document}
