@@ -1,0 +1,93 @@
+\documentclass[a4paper,5pt]{amsbook}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{textcomp}
+\usepackage{systeme}
+\usepackage{amssymb}
+\usepackage[]{amsmath}
+\usepackage{subcaption}
+\usepackage[inline]{enumitem}
+\usepackage{gensymb}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\sen}{\,\mbox{sen}}
+\newcommand{\tg}{\,\mbox{tg}\,}
+\newcommand{\cosec}{\,\mbox{cosec}\,}
+\newcommand{\cotg}{\,\mbox{cotg}\,}
+\newcommand{\tr}{\,\mbox{tr}\,}
+\newcommand{\ds}{\displaystyle}
+\newcommand{\ra}{\rightarrow}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setlength{\textwidth}{16cm} %\setlength{\topmargin}{-1.3cm}
+\setlength{\textheight}{25cm}
+\setlength{\leftmargin}{1.2cm} \setlength{\rightmargin}{1.2cm}
+\setlength{\oddsidemargin}{0cm}\setlength{\evensidemargin}{0cm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \renewcommand{\baselinestretch}{1.6}
+% \renewcommand{\thefootnote}{\fnsymbol{footnote}}
+% \renewcommand{\theequation}{\thesection.\arabic{equation}}
+% \setlength{\voffset}{-50pt}
+% \numberwithin{equation}{chapter}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\thispagestyle{empty}
+\pagestyle{empty}
+\begin{minipage}[h]{0.14\textwidth}
+	\includegraphics[scale=0.24]{../../ufgd.png}
+\end{minipage}
+\begin{minipage}[h]{\textwidth}
+\begin{tabular}{c}
+{{\bf UNIVERSIDADE FEDERAL DA GRANDE DOURADOS}}\\
+{{\bf C\'alculo Diferencial e Integral III --- Lista 13}}\\
+{{\bf Prof.\ Adriano Barbosa}}\\
+\end{tabular}
+\vspace{-0.45cm}
+%
+\end{minipage}
+
+%------------------------
+
+\vspace{1cm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   formulario  inicio  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{enumerate}
+    \setlength\itemsep{0.5cm}
+    \item Calcule a integral de linha diretamente e utilizando o Teorema de
+    Green.
+        \begin{enumerate}
+            \setlength\itemsep{0.3cm}
+            \item $\int_C xy\ dx + x^2\ dy$, $C$ \'e o ret\^angulo com v\'ertices
+            $(0,0)$, $(3,0)$, $(3,1)$ e $(0,1)$
+            \item $\ds\int_C xy\ dx + x^2y^3\ dy$, onde $C$ \'e o tri\^angulo com
+            v\'ertices $(0,0)$, $(1,0)$ e $(1,2)$
+        \end{enumerate}
+
+    \item Use o Teorema de Green para calcular a integral de linha ao longo da
+    curva dada com orienta\c{c}\~ao positiva.
+        \begin{enumerate}
+            \setlength\itemsep{0.3cm}
+            \item $\ds\int_C xy^2\ dx + 2x^2y\ dy$, $C$ \'e o tri\^angulo com
+            v\'ertices $(0,0)$, $(2,2)$ e $(2,4)$
+            \item $\ds\int_C (y+e^{\sqrt{x}})\ dx + (2x+\cos{y^2})\ dy$, $C$ \'e
+            o limite da regi\~ao englobada pelas par\'abolas $y=x^2$ e $x=y^2$
+        \end{enumerate}
+
+    \item Use o Teorema de Green para calcular o trabalho realizado pela for\c{c}a
+    $F(x,y)=(x(x+y), xy^2)$ ao mover uma part\'{\i}cula da origem ao longo do eixo
+    $x$ para $(1,0)$, em seguida ao longo de um segmento de reta at\'e $(0,1)$, e
+    ent\~ao de volte \`a origem ao longo do eixo $y$.
+
+    \item Calcule a \'area da regi\~ao acima da curva
+    $r(t)=(\cos{t},\sen{t}-1),0\le t\le \frac{\pi}{2}$ e abaixo do eixo $x$.
+\end{enumerate}
+
+\end{document}
