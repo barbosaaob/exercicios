@@ -1,0 +1,243 @@
+\documentclass[a4paper,5pt]{amsbook}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{textcomp}
+\usepackage{systeme}
+\usepackage{amssymb}
+\usepackage[]{amsmath}
+\usepackage{subcaption}
+\usepackage[inline]{enumitem}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\sen}{\,\mbox{sen}\,}
+\newcommand{\tg}{\,\mbox{tg}\,}
+\newcommand{\cosec}{\,\mbox{cosec}\,}
+\newcommand{\cotg}{\,\mbox{cotg}\,}
+\newcommand{\tr}{\,\mbox{tr}\,}
+\newcommand{\ds}{\displaystyle}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setlength{\textwidth}{16cm} % \setlength{\topmargin}{-2cm}
+% \setlength{\textheight}{25cm}
+\setlength{\leftmargin}{1.2cm} \setlength{\rightmargin}{1.2cm}
+\setlength{\oddsidemargin}{0cm}\setlength{\evensidemargin}{0cm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \renewcommand{\baselinestretch}{1.6}
+% \renewcommand{\thefootnote}{\fnsymbol{footnote}}
+% \renewcommand{\theequation}{\thesection.\arabic{equation}}
+% \setlength{\voffset}{-50pt}
+% \numberwithin{equation}{chapter}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\thispagestyle{empty}
+\begin{minipage}[h]{0.14\textwidth}
+	\includegraphics[scale=0.24]{../../ufgd.png}
+\end{minipage}
+\begin{minipage}[h]{\textwidth}
+\begin{tabular}{c}
+{{\bf UNIVERSIDADE FEDERAL DA GRANDE DOURADOS}}\\
+{{\bf \'{A}lgebra Linear e Geometria Anal\'{\i}tica --- Lista 2}}\\
+{{\bf Prof.\ Adriano Barbosa}}\\
+\end{tabular}
+\vspace{-0.45cm}
+%
+\end{minipage}
+
+%------------------------
+\vspace{1cm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   formulario  inicio  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{enumerate}
+	\item Determine $a$, $b$, $c$ e $d$ tais que
+		\[\begin{bmatrix}
+			a-b & b+c \\
+			3d+c & 2a-4d
+		\end{bmatrix}
+		=
+		\begin{bmatrix}
+			8 & 1 \\
+			7 & 6
+		\end{bmatrix}\]
+
+	\vspace{0.5cm}
+	\item Usando as matrizes abaixo, resolva as opera\c{c}\~oes abaixo quando poss\'{\i}vel:
+	\noindent{}
+	\[A = \begin{bmatrix}
+			3 & 0 \\
+			-1 & 2 \\
+			1 & 1
+		\end{bmatrix},
+	B = \begin{bmatrix}
+			4 & -1 \\
+			0 & 2
+		\end{bmatrix},
+	C = \begin{bmatrix}
+			1 & 4 & 2 \\
+			3 & 1 & 5
+		\end{bmatrix},
+	D = \begin{bmatrix}
+			1 & 5 & 2 \\
+			-1 & 0 & 1 \\
+			3 & 2 & 4
+		\end{bmatrix},
+	E = \begin{bmatrix}
+			6 & 1 & 3 \\
+			-1 & 1 & 2 \\
+			4 & 1 & 3
+		\end{bmatrix}\]
+		\begin{enumerate}
+			\item $D+E$
+			\item $\tr(D)$
+			\item $2A^T+C$
+			\item $B-B^T$
+			\item $\tr(C^TA^T+2E^T)$
+			\item $B^T(CC^T-A^TA)$
+			\item $(-AC)^T+5D^T$
+		\end{enumerate}
+
+	%\vspace{0.5cm}
+	%\item Mostre que se $A$ e $B$ s\~ao matrizes $n\times{}n$, ent\~ao $\tr(A+B) = \tr(A) + \tr(B)$.
+
+	\vspace{0.5cm}
+	\item Encontre $A$ que satisfaz as igualdades abaixo:
+
+		\begin{enumerate*}
+			\item $A^{-1} =
+				\begin{bmatrix}
+					2 & -1 \\
+					3 & 5
+				\end{bmatrix}$
+			\hspace{1cm}
+			\hspace{1cm}
+			\item $ {(I+2A)}^{-1} =
+				\begin{bmatrix}
+					-1 & 2 \\
+					4 & 5
+				\end{bmatrix}$
+			\hspace{1cm}
+			\hspace{1cm}
+			\item $A^{-1} =
+				\begin{bmatrix}
+					\cos{\theta} & \sin{\theta} \\
+					-\sin{\theta} & \cos{\theta}
+				\end{bmatrix}$
+		\end{enumerate*}
+
+	\vspace{0.5cm}
+	\item Resolva o sistema
+		\[\systeme[xyz]{
+				x + 2y + z = b_1,
+				x - y + z = b_2,
+				x + y = b_3
+			}\]
+		invertendo a matriz dos coeficientes para
+
+		\begin{enumerate*}
+			\item $b_1=-1, b_2=3, b_3 = 4$
+			\hspace{1cm}
+			\hspace{1cm}
+			\item $b_1=5, b_2=0, b_3=0$
+		\end{enumerate*}
+
+	\vspace{0.5cm}
+	\item Sejam
+		\[A = \begin{bmatrix}
+				2 & 1 & 2 \\
+				2 & 2 & -2 \\
+				3 & 1 & 1
+			\end{bmatrix}
+		\hspace{1cm}
+		x = \begin{bmatrix}
+			x_1 \\ x_2 \\ x_3
+			\end{bmatrix}\]
+			\begin{enumerate}
+				\item Mostre que a equa\c{c}\~ao $Ax=x$ pode ser reescrita como
+					$(A-I)x = 0$ e use este resultado para resolver $Ax=x$ em
+					$x$.
+				\item Resolva $Ax=4x$.
+			\end{enumerate}
+
+	\vspace{0.5cm}
+	\item Apenas observando as matrizes aumentadas abaixo, determine se o
+		sistema correspondente tem solu\c{c}\~ao e se a solu\c{c}\~ao \'e \'unica. Justifique
+		sua resposta.
+
+		\begin{enumerate*}
+			\item $\begin{bmatrix}
+					1 & 2 & 3 & 4 \\
+					0 & 5 & 6 & 7 \\
+					0 & 0 & 8 & 9
+				\end{bmatrix}$
+			\hspace{0.5cm}
+			\hspace{0.5cm}
+			\item $\begin{bmatrix}
+					1 & 0 & 0 & 1 \\
+					0 & 1 & 0 & 1 \\
+					0 & 0 & 0 & 1
+				\end{bmatrix}$
+			\hspace{0.5cm}
+			\hspace{0.5cm}
+			\item $\begin{bmatrix}
+					1 & 0 & 0 & 0 & 1 \\
+					0 & 2 & 3 & -1 & 2 \\
+					0 & 0 & 3 & 9 & 3 \\
+					0 & 0 & 0 & 0 & 0 \\
+				\end{bmatrix}$
+		\end{enumerate*}
+
+	\vspace{0.5cm}
+	\item Dada $A =
+		\begin{bmatrix}
+			1 & 0 \\
+			0 & -2
+		\end{bmatrix}$.
+		Encontre $A^2$, $A^{-2}$ e $A^{-k}$ por inspe\c{c}\~ao.
+
+	\vspace{0.5cm}
+	\item Encontre todos os valores de $a$, $b$ e $c$ tais que $A$ \'e sim\'etrica
+		\[A = \begin{bmatrix}
+				2 & a-2b+2c & 2a+b+c \\
+				3 & 5 & a+c \\
+				0 & -2 & 7
+			\end{bmatrix}\]
+
+	\vspace{0.5cm}
+	\item Se uma matriz $A_{n\times{}n}$ pode ser expressa como $A=LU$, onde $L$
+		\'e uma matriz triangular inferior e $U$ \'e uma matriz triangular
+		superior, ent\~ao o sistema $Ax=b$ pode ser expresso como $LUx=b$ e
+		resolvido em dois passos:
+		\begin{enumerate}
+			\item Chame $y = Ux$ e resolva o sistema $Ly=b$ para $y$.
+			\item Sabendo o valor de $y$, resolva $Ux=y$ para $x$.
+		\end{enumerate}
+		Verifique que $A=LU$ e use este m\'etodo para resolver o sistema $Ax=b$, onde:
+		\[A = \begin{bmatrix}
+				2 & -1 & 3 \\
+				-4 & 5 & 0 \\
+				4 & 2 & 18
+			\end{bmatrix},\ 
+		L = \begin{bmatrix}
+				1 & 0 & 0 \\
+				-2 & 3 & 0 \\
+				2 & 4 & 1
+			\end{bmatrix},\ 
+		U = \begin{bmatrix}
+				2 & -1 & 3 \\
+				0 & 1 & 2 \\
+				0 & 0 & 4
+			\end{bmatrix},\ 
+		b = \begin{bmatrix}
+			1 \\ -2 \\ 0
+		\end{bmatrix}\]
+\end{enumerate}
+
+\end{document}
