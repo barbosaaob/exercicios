@@ -1,0 +1,91 @@
+\documentclass[a4paper,5pt]{amsbook}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{textcomp}
+\usepackage{systeme}
+\usepackage{amssymb}
+\usepackage[]{amsmath}
+\usepackage{subcaption}
+\usepackage[inline]{enumitem}
+\usepackage{gensymb}
+\usepackage[utf8]{inputenc}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\sen}{\,\mbox{sen}\,}
+\newcommand{\tg}{\,\mbox{tg}\,}
+\newcommand{\cosec}{\,\mbox{cosec}\,}
+\newcommand{\cotg}{\,\mbox{cotg}\,}
+\newcommand{\tr}{\,\mbox{tr}\,}
+\newcommand{\ds}{\displaystyle}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setlength{\textwidth}{16cm} \setlength{\topmargin}{-1.3cm}
+\setlength{\textheight}{30cm}
+\setlength{\leftmargin}{1.2cm} \setlength{\rightmargin}{1.2cm}
+\setlength{\oddsidemargin}{0cm}\setlength{\evensidemargin}{0cm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \renewcommand{\baselinestretch}{1.6}
+% \renewcommand{\thefootnote}{\fnsymbol{footnote}}
+% \renewcommand{\theequation}{\thesection.\arabic{equation}}
+% \setlength{\voffset}{-50pt}
+% \numberwithin{equation}{chapter}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\thispagestyle{empty}
+\pagestyle{empty}
+\begin{minipage}[h]{0.14\textwidth}
+	\includegraphics[scale=0.24]{../../ufgd.png}
+\end{minipage}
+\begin{minipage}[h]{\textwidth}
+\begin{tabular}{c}
+{{\bf UNIVERSIDADE FEDERAL DA GRANDE DOURADOS}}\\
+{{\bf C\'{a}lculo Diferencial e Integral II --- Lista 4}}\\
+{{\bf Prof.\ Adriano Barbosa}}\\
+\end{tabular}
+\vspace{-0.45cm}
+%
+\end{minipage}
+
+%------------------------
+
+\vspace{1cm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   formulario  inicio  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{enumerate}
+	\vspace{0.5cm}
+	\item Resolva as integrais utilizando as substitui\c{c}\~oes dadas:
+		\begin{enumerate}
+			\item $\ds\int x^3{(2+x^4)}^5\ dx$, $u = 2+x^4$
+			\item $\ds\int \cos^3\theta\ \sen\theta\ d\theta$, $u=\cos\theta$
+			\item $\ds\int \frac{\sec^2(1/x)}{x^2}\ dx$, $u=1/x$
+		\end{enumerate}
+
+	\vspace{0.5cm}
+	\item Resolva as integrais indefinidas:
+		\begin{enumerate}
+			\item $\ds\int (x+1)\sqrt{2x+x^2}\ dx$
+			\item $\ds\int \frac{a+bx^2}{\sqrt{3ax+bx^3}}\ dx$
+			\item $\ds\int \sec^2\theta\ \tg^3\theta\ d\theta$
+			\item $\ds\int \sqrt{x}\ \sen{(1+x^{3/2})}\ dx$
+			\item $\ds\int x{(2x+5)}^8\ dx$
+		\end{enumerate}
+	
+	\vspace{0.5cm}
+	\item Resolva as integrais definidas:
+		\begin{enumerate}
+			\item $\ds\int_0^1 {(3t-1)}^{50}\ dt$
+			\item $\ds\int_0^{\pi/2} \cos{x}\ \sen{(\sen{x})}\ dx$
+			\item $\ds\int_0^a x\sqrt{x^2+a^2}\ dx\ (a>0)$
+			\item $\ds\int_0^4 \frac{x}{\sqrt{1+2x}}\ dx$
+		\end{enumerate}
+
+\end{enumerate}
+\end{document}
