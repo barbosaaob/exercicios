@@ -1,0 +1,177 @@
+\documentclass[a4paper,5pt]{amsbook}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{textcomp}
+\usepackage{systeme}
+\usepackage{amssymb}
+\usepackage[]{amsmath}
+\usepackage{subcaption}
+\usepackage[inline]{enumitem}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\sen}{\,\mbox{sen}\,}
+\newcommand{\tg}{\,\mbox{tg}\,}
+\newcommand{\cosec}{\,\mbox{cosec}\,}
+\newcommand{\cotg}{\,\mbox{cotg}\,}
+\newcommand{\tr}{\,\mbox{tr}\,}
+\newcommand{\ds}{\displaystyle}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setlength{\textwidth}{16cm} %\setlength{\topmargin}{-1.3cm}
+\setlength{\textheight}{30cm}
+\setlength{\leftmargin}{1.2cm} \setlength{\rightmargin}{1.2cm}
+\setlength{\oddsidemargin}{0cm}\setlength{\evensidemargin}{0cm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \renewcommand{\baselinestretch}{1.6}
+% \renewcommand{\thefootnote}{\fnsymbol{footnote}}
+% \renewcommand{\theequation}{\thesection.\arabic{equation}}
+% \setlength{\voffset}{-50pt}
+% \numberwithin{equation}{chapter}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\thispagestyle{empty}
+\pagestyle{empty}
+\begin{minipage}[h]{0.14\textwidth}
+	\includegraphics[scale=0.24]{../../ufgd.png}
+\end{minipage}
+\begin{minipage}[h]{\textwidth}
+\begin{tabular}{c}
+{{\bf UNIVERSIDADE FEDERAL DA GRANDE DOURADOS}}\\
+{{\bf \'{A}lgebra Linear e Geometria Anal\'{\i}tica --- Lista 7}}\\
+{{\bf Prof.\ Adriano Barbosa}}\\
+\end{tabular}
+\vspace{-0.45cm}
+%
+\end{minipage}
+
+%------------------------
+
+\vspace{1cm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   formulario  inicio  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{enumerate}
+	\vspace{0.5cm}
+    \item Sejam $u=(-3,2,1,0)$, $v=(4,7,-3,2)$ e $w=(5,-2,8,1)$. Encontre
+
+        \begin{enumerate*}
+            \item $v-w$
+			\hspace{0.5cm}
+			\hspace{0.5cm}
+            \item $2u+7v$
+			\hspace{0.5cm}
+			\hspace{0.5cm}
+            \item $-u+(v-4w)$
+			\hspace{0.5cm}
+			\hspace{0.5cm}
+            \item $(6v-w)-(4u+v)$
+        \end{enumerate*}
+
+	\vspace{0.5cm}
+	\item Sejam $u = (4,1,2,3)$, $v = (0,3,8,-2)$ e $w = (3,1,2,2)$. Calcule:
+
+		\begin{enumerate*}
+			\item $\|u+v\|$
+			\hspace{0.5cm}
+			\hspace{0.5cm}
+			\item $\left\|\ds\frac{1}{\|w\|}w\right\|$
+			\hspace{0.5cm}
+			\hspace{0.5cm}
+			\item $\|-2u\|+2\|u\|$
+			\hspace{0.5cm}
+			\hspace{0.5cm}
+			\item $\langle u, v \rangle$
+		\end{enumerate*}
+
+	\vspace{0.5cm}
+    \item Mostre que se $v$ \'e um vetor n\~ao-nulo de $\mathbb{R}^n$, ent\~ao
+        $w=\frac{1}{\|v\|}v$ tem norma 1.
+
+	\vspace{0.5cm}
+	\item Mostre que n\~ao existem escalares $a$, $b$ e $c$ tais que
+		\[a(1,0,1,0)+b(1,0,-2,1)+c(2,0,1,2)=(1,-2,2,3)\]
+
+    \vspace{0.5cm}
+    \item Verifique que a f\'ormula $\langle Au,v\rangle=\langle u,A^Tv\rangle$ \'e v\'alida para 
+        \begin{enumerate}
+            \item $A=\left[\begin{array}{ccc}
+                    2 & -1 \\
+                    3 & 4
+                \end{array}\right]$,
+                $u=\left[\begin{array}{cc}
+                    3 \\
+                    1
+                \end{array}\right]$,
+                $v=\left[\begin{array}{cc}
+                    -2 \\
+                    6
+                \end{array}\right]$
+            \item $A=\left[\begin{array}{ccc}
+                    -1 & 2 & 4 \\
+                    3 & 1 & 0 \\
+                    5 & -2 & 3
+                \end{array}\right]$,
+                $u=\left[\begin{array}{cc}
+                    -1 \\
+                    2 \\
+                    5
+                \end{array}\right]$,
+                $v=\left[\begin{array}{cc}
+                    0 \\
+                    2 \\
+                    -4
+                \end{array}\right]$
+        \end{enumerate}
+
+    \vspace{0.5cm}
+    \item Determine os valores de $k$ para que os vetores $u$ e $v$ sejam
+        ortogonais
+        \begin{enumerate}
+            \item $u=(2,1,3)$, $v=(1,7,k)$
+            \item $u=(k,k,1)$, $v=(k,5,6)$
+        \end{enumerate}
+
+	\vspace{0.5cm}
+	\item Se $u$ e $v$ s\~ao vetores em $\mathbb{R}^n$, vale a desigualdade de
+		Cauchy-Schwarz $|\langle u, v \rangle| \le \|u\| \|v\|$. Verifique que
+		a desigualdade de Cauchy-Schwarz vale para os vetores abaixo:
+		\begin{enumerate}
+			\item $u = (3,2)$, $v = (4, -1)$
+			\item $u = (-3,1,0)$, $v = (2,-1,3)$
+			\item $u = (0,-2,2,1)$, $v = (-1,-1,1,1)$
+		\end{enumerate}
+
+	\vspace{0.5cm}
+	\item Use a desigualdade de Cauchy-Schwarz para provar que
+		\[{(a \cos\theta + b \sen\theta)}^2 \le a^2 + b^2\]
+
+	\vspace{0.5cm}
+	\item Se $u$ e $v$ s\~ao matrizes $n \times 1$ e $A$ \'e uma matriz $n \times
+		n$, mostre que
+		\[{\left(v^TA^TAu\right)}^2 \le \left(u^TA^TAu\right)\left(v^TA^TAv\right)\]
+
+    \vspace{0.5cm}
+    \item Sejam $a_1, a_2, \ldots, a_n\in\mathbb{R}$. Em $\mathbb{R}^2$, os vetores
+        $v_1=(a_1,0)$ e $v_2=(0,a_2)$ determinam um ret\^angulo de \'area $A=a_1a_2$ e
+        em $\mathbb{R}^3$, os vetores $v_1=(a_1,0,0)$, $v_2=(0,a_2,0)$ e
+        $v_3=(0,0,a_3)$ determinam um paralelep\'{\i}pedo de volume $V=a_1a_2a_3$. A
+        \'area $A$ e o volume $V$ s\~ao chamados, \`as vezes, de ``medida
+        euclidiana'' do ret\^angulo e do paralelep\'{\i}pedo, respectivamente.
+        \begin{enumerate}
+            \item Como voc\^e definiria a medida euclidiana da ``caixa'' em
+                $\mathbb{R}^n$ determinada pelos vetores
+                $v_1=(a_1,0,0,\ldots,0)$, $v_2=(0,a_2,0,\ldots,0)$, $\ldots$,
+                $v_n=(0,0,0,\ldots,a_n)$?
+            \item Como voc\^e definiria o comprimento da diagonal da caixa do
+                item acima?
+        \end{enumerate}
+\end{enumerate}
+
+\end{document}
