@@ -1,0 +1,125 @@
+\documentclass[a4paper,5pt]{amsbook}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{textcomp}
+\usepackage{systeme}
+\usepackage{amssymb}
+\usepackage[]{amsmath}
+\usepackage{subcaption}
+\usepackage[inline]{enumitem}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\sen}{\,\mbox{sen}\,}
+\newcommand{\tg}{\,\mbox{tg}\,}
+\newcommand{\cosec}{\,\mbox{cosec}\,}
+\newcommand{\cotg}{\,\mbox{cotg}\,}
+\newcommand{\tr}{\,\mbox{tr}\,}
+\newcommand{\ds}{\displaystyle}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setlength{\textwidth}{16cm} %\setlength{\topmargin}{-1.3cm}
+\setlength{\textheight}{30cm}
+\setlength{\leftmargin}{1.2cm} \setlength{\rightmargin}{1.2cm}
+\setlength{\oddsidemargin}{0cm}\setlength{\evensidemargin}{0cm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \renewcommand{\baselinestretch}{1.6}
+% \renewcommand{\thefootnote}{\fnsymbol{footnote}}
+% \renewcommand{\theequation}{\thesection.\arabic{equation}}
+% \setlength{\voffset}{-50pt}
+% \numberwithin{equation}{chapter}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\thispagestyle{empty}
+\pagestyle{empty}
+\begin{minipage}[h]{0.14\textwidth}
+	\includegraphics[scale=0.24]{../../ufgd.png}
+\end{minipage}
+\begin{minipage}[h]{\textwidth}
+\begin{tabular}{c}
+{{\bf UNIVERSIDADE FEDERAL DA GRANDE DOURADOS}}\\
+{{\bf \'{A}lgebra Linear e Geometria Anal\'{\i}tica --- Lista 8}}\\
+{{\bf Prof.\ Adriano Barbosa}}\\
+\end{tabular}
+\vspace{-0.45cm}
+%
+\end{minipage}
+
+%------------------------
+
+\vspace{1cm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   formulario  inicio  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{enumerate}
+	\vspace{0.5cm}
+    \item Determine se os conjuntos de vetores s\~ao linearmente independentes ou
+        linearmente dependentes em $\mathbb{R}^2$.
+        \begin{enumerate}
+            \item $(2,1)$, $(3,0)$
+            \item $(4,1)$, $(-7,-8)$
+            \item $(0,0)$, $(1,3)$
+            \item $(3,9)$, $(-4,-12)$
+        \end{enumerate}
+        
+    \vspace{0.5cm}
+    \item Quais dos conjuntos de vetores do exerc\'{\i}cio anterior s\~ao base de
+        $\mathbb{R}^2$?
+        
+    \vspace{0.5cm}
+    \item Quais dos seguintes conjuntos de vetores s\~ao base de $\mathbb{R}^3$?
+        \begin{enumerate}
+            \item $(1,0,0)$, $(2,2,0)$, $(3,3,0)$
+            \item $(2,-3,1)$, $(4,1,1)$, $(0,-7,1)$
+            \item $(3,1,-4)$, $(2,5,6)$, $(1,4,8)$
+            \item $(1,6,4)$, $(2,4,-1)$, $(-1,2,5)$
+        \end{enumerate}
+
+    \vspace{0.5cm}
+    \item Explique por que os seguintes conjuntos de vetores n\~ao s\~ao base dos
+        espa\c{c}os vetoriais indicados.
+        \begin{enumerate}
+            \item $(1,2)$, $(0,3)$, $(2,7)$ de $\mathbb{R}^2$
+            \item $(-1,3,2)$, $(6,1,1)$ de $\mathbb{R}^3$
+        \end{enumerate}
+
+    \vspace{0.5cm}
+    \item Encontre as coordenadas de $w$ em rela\c{c}\~ao a base $S=\{u_1,u_2\}$ de
+        $\mathbb{R}^2$.
+        \begin{enumerate}
+            \item $u_1=(1,0)$, $u_2=(0,1)$; $w=(3,-7)$
+            \item $u_1=(2,-4)$, $u_2=(3,8)$; $w=(1,1)$
+        \end{enumerate}
+
+    \vspace{0.5cm}
+    \item Encontre as coordenadas de $w$ em rela\c{c}\~ao a base $S=\{u_1,u_2,u_3\}$
+        de $\mathbb{R}^3$.
+        \begin{enumerate}
+            \item $u_1=(1,0,0)$, $u_2=(2,2,0)$, $u_3=(3,3,3)$; $w=(2,-1,3)$
+            \item $u_1=(1,2,3)$, $u_2=(-4,5,6)$, $u_3=(7,-8,9)$; $w=(5,-12,3)$
+        \end{enumerate}
+
+    \vspace{0.5cm}
+    \item Determine bases dos seguintes subespa\c{c}os de $\mathbb{R}^3$.
+        \begin{enumerate}
+            \item o plano $3x-2y+5z=0$
+            \item o plano $x-y=0$
+            \item a reta $x=2t$, $y=-t$, $z=4t$
+        \end{enumerate}
+
+    \vspace{0.5cm}
+    \item Determine a dimens\~ao dos seguintes subespa\c{c}os de $\mathbb{R}^4$
+        \begin{enumerate}
+            \item conjuntos dos vetores da forma $(a,b,c,0)$
+            \item conjuntos dos vetores da forma $(a,b,a-b,a+b)$
+            \item conjuntos dos vetores da forma $(a,a,a,a)$
+        \end{enumerate}
+\end{enumerate}
+
+\end{document}
