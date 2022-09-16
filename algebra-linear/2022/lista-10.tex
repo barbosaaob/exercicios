@@ -1,0 +1,100 @@
+\documentclass[a4paper,5pt]{amsbook}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{textcomp}
+\usepackage{systeme}
+\usepackage{amssymb}
+\usepackage[]{amsmath}
+\usepackage{subcaption}
+\usepackage[inline]{enumitem}
+\usepackage{gensymb}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\sen}{\,\mbox{sen}\,}
+\newcommand{\tg}{\,\mbox{tg}\,}
+\newcommand{\cosec}{\,\mbox{cosec}\,}
+\newcommand{\cotg}{\,\mbox{cotg}\,}
+\newcommand{\tr}{\,\mbox{tr}\,}
+\newcommand{\ds}{\displaystyle}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setlength{\textwidth}{16cm} %\setlength{\topmargin}{-1.3cm}
+\setlength{\textheight}{23cm}
+\setlength{\leftmargin}{1.2cm} \setlength{\rightmargin}{1.2cm}
+\setlength{\oddsidemargin}{0cm}\setlength{\evensidemargin}{0cm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \renewcommand{\baselinestretch}{1.6}
+% \renewcommand{\thefootnote}{\fnsymbol{footnote}}
+% \renewcommand{\theequation}{\thesection.\arabic{equation}}
+% \setlength{\voffset}{-50pt}
+% \numberwithin{equation}{chapter}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\thispagestyle{empty}
+\pagestyle{empty}
+\begin{minipage}[h]{0.14\textwidth}
+	\includegraphics[scale=0.24]{../../ufgd.png}
+\end{minipage}
+\begin{minipage}[h]{\textwidth}
+\begin{tabular}{c}
+{{\bf UNIVERSIDADE FEDERAL DA GRANDE DOURADOS}}\\
+{{\bf \'{A}lgebra Linear e Geometria Anal\'{\i}tica --- Lista 10}}\\
+{{\bf Prof.\ Adriano Barbosa}}\\
+\end{tabular}
+\vspace{-0.45cm}
+%
+\end{minipage}
+
+%------------------------
+
+\vspace{1cm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   formulario  inicio  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{enumerate}
+	\vspace{0.5cm}
+	\item Calcule o n\'ucleo e a imagem das transforma\c{c}\~oes lineares abaixo:
+		\begin{enumerate}
+			\item $T:\mathbb{R}^2 \rightarrow \mathbb{R}^2$,
+				$T(x,y) = (2x-3y, 3x)$
+			\item $T:\mathbb{R}^2 \rightarrow \mathbb{R}^4$,
+				$T(x,y) = (x-y, x, y, y - x)$
+			\item $T:\mathbb{R}^3 \rightarrow \mathbb{R}$,
+				$T(x,y,z) = x - y + z$
+		\end{enumerate}
+
+	\vspace{0.5cm}
+	\item Determine se as transforma\c{c}\~oes lineares do exerc\'{\i}cio anterior s\~ao
+		injetivas e se s\~ao sobrejetivas.
+
+	\vspace{0.5cm}
+	\item O operador linear $T:\mathbb{R}^2 \rightarrow \mathbb{R}^2$, $T(x,y)
+		= (2x+y, 3x+4y)$ \'e invert\'{\i}vel? Encontre sua inversa se poss\'{\i}vel.
+
+	\vspace{0.5cm}
+	\item Determine se os conjuntos de vetores abaixo s\~ao LI ou LD
+		\begin{enumerate}
+			\item $\{(1,2), (-2, 1)\}$ em $\mathbb{R}^2$
+			\item $\{(1,1,1), (1,1,0), (1,0,0)\}$ em $\mathbb{R}^3$
+			\item $\{(1,2,3), (1,1,1)\}$ em $\mathbb{R}^3$
+			\item $\{(1,0), (1,1), (1,2)\}$ em $\mathbb{R}^2$
+		\end{enumerate}
+
+	\vspace{0.5cm}
+	\item Para quais conjuntos de vetores do exerc\'{\i}cio anterior \'e poss\'{\i}vel
+		escrever qualquer vetor dos espa\c{c}os vetoriais dados como combina\c{c}\~ao
+		linear de seus elementos?
+
+	\vspace{0.5cm}
+	\item Determine quais dos conjuntos de vetores do exerc\'{\i}cio $(10)$ s\~ao
+		base dos espa\c{c}os vetoriais dados.
+\end{enumerate}
+
+\end{document}

@@ -1,0 +1,163 @@
+\documentclass[a4paper,5pt]{amsbook}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{textcomp}
+\usepackage{systeme}
+\usepackage{amssymb}
+\usepackage[]{amsmath}
+\usepackage{subcaption}
+\usepackage[inline]{enumitem}
+\usepackage{gensymb}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\sen}{\,\mbox{sen}\,}
+\newcommand{\tg}{\,\mbox{tg}\,}
+\newcommand{\cosec}{\,\mbox{cosec}\,}
+\newcommand{\cotg}{\,\mbox{cotg}\,}
+\newcommand{\tr}{\,\mbox{tr}\,}
+\newcommand{\ds}{\displaystyle}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setlength{\textwidth}{16cm} \setlength{\topmargin}{-1cm}
+\setlength{\textheight}{25cm}
+\setlength{\leftmargin}{1.2cm} \setlength{\rightmargin}{1.2cm}
+\setlength{\oddsidemargin}{0cm}\setlength{\evensidemargin}{0cm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \renewcommand{\baselinestretch}{1.6}
+% \renewcommand{\thefootnote}{\fnsymbol{footnote}}
+% \renewcommand{\theequation}{\thesection.\arabic{equation}}
+% \setlength{\voffset}{-50pt}
+% \numberwithin{equation}{chapter}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\thispagestyle{empty}
+\pagestyle{empty}
+\begin{minipage}[h]{0.14\textwidth}
+	\includegraphics[scale=0.24]{../../ufgd.png}
+\end{minipage}
+\begin{minipage}[h]{\textwidth}
+\begin{tabular}{c}
+{{\bf UNIVERSIDADE FEDERAL DA GRANDE DOURADOS}}\\
+{{\bf \'{A}lgebra Linear e Geometria Anal\'{\i}tica --- Lista 9}}\\
+{{\bf Prof.\ Adriano Barbosa}}\\
+\end{tabular}
+\vspace{-0.45cm}
+%
+\end{minipage}
+
+%------------------------
+
+\vspace{1cm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   formulario  inicio  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{enumerate}
+	\vspace{0.5cm}
+	\item Encontre o dom\'{\i}nio e o contra-dom\'{\i}nio das transforma\c{c}\~oes abaixo e
+		determine se s\~ao lineares:
+		\begin{enumerate}
+			\item $T(x,y,z) = (3x-2y+4z, 5x-8y+z)$
+			\item $T(x,y) = (2xy-y, x+3xy, x+y)$
+			\item $T(x,y,z,t) = (x^2-3y+z-2t, 3x-4y-z^2+t)$
+		\end{enumerate}
+
+	\vspace{0.5cm}
+	\item Encontre a matriz can\^onica das transforma\c{c}\~oes lineares abaixo
+		\begin{enumerate}
+			\item $T: \mathbb{R}^4 \rightarrow \mathbb{R}2$, $T(x,y,z,t) =
+				2x-3y+t, 3x+5y-t)$
+			\item $T: \mathbb{R}^4 \rightarrow \mathbb{R}^4$, $T(x,y,z,t) = (x,
+				x+y, x+y+z, x+y+z+t)$
+			\item $T: \mathbb{R}^2 \rightarrow \mathbb{R}^3$, $T(x,y) = (-x+y,
+				3x-2y, 5x-7y)$
+		\end{enumerate}
+
+	\vspace{0.5cm}
+	\item Encontre a transforma\c{c}\~ao linear cuja matriz can\^onica \'e dada abaixo:
+
+		\begin{enumerate*}
+			\item $\begin{bmatrix}
+					1 & 2 \\
+					3 & 4
+				\end{bmatrix}$
+			\hspace{0.5cm}
+			\hspace{0.5cm}
+			\item $\begin{bmatrix}
+					-1 & 2 & 0 \\
+					3 & 1 & 5
+				\end{bmatrix}$
+			\hspace{0.5cm}
+			\hspace{0.5cm}
+			\item $\begin{bmatrix}
+					-1 & 1 \\
+					2 & 4 \\
+					7 & 8
+				\end{bmatrix}$
+		\end{enumerate*}
+
+	\vspace{0.5cm}
+	\item Use a matriz can\^onica $[T]$ para obter $T(v)$ e em seguida confira
+		o resultado calculando $T(v)$ diretamente:
+		\begin{enumerate}
+			\item $T: \mathbb{R}^2 \rightarrow \mathbb{R}^3$, $T(x,y) = (-x+y,
+				y, x-y)$ avaliada em $(1,2)$
+			\item $T: \mathbb{R}^3 \rightarrow \mathbb{R}^3$, $T(x,y,z) =
+				(-x+2y, y-3z, x-y-z)$ avaliada em $(2,3,0)$
+		\end{enumerate}
+
+	\vspace{0.5cm}
+	\item Encontre a matriz can\^onica para cada composi\c{c}\~ao abaixo:
+		\begin{enumerate}
+			\item Uma rota\c{c}\~ao de $90\degree$ seguida de uma reflex\~ao em torno
+				do eixo $y$.
+			\item Uma reflex\~ao em torno do eixo $x$ seguida de uma escala de
+				raz\~ao $k=3$.
+			\item Uma rota\c{c}\~ao de $60\degree$, seguida de uma proje\c{c}\~ao ortogonal
+				sobre o eixo $x$, seguida de uma reflex\~ao em torno do eixo $y$.
+			\item Uma rota\c{c}\~ao de $15\degree$, seguida de uma rota\c{c}\~ao de
+				$105\degree$, seguida de uma rota\c{c}\~ao de $60\degree$.
+		\end{enumerate}
+
+	\vspace{0.5cm}
+	\item Determine se $T_1\circ T_2 = T_2 \circ T_1$:
+		\begin{enumerate}
+			\item $T_1:\mathbb{R}^2 \rightarrow \mathbb{R}^2$ \'e a proje\c{c}\~ao
+				ortogonal sobre o eixo $x$ e $T_2: \mathbb{R}^2 \rightarrow
+				\mathbb{R}^2$ \'e a proje\c{c}\~ao ortogonal sobre o eixo $y$.
+			\item $T_1:\mathbb{R}^2 \rightarrow \mathbb{R}^2$ \'e a rota\c{c}\~ao por
+				um \^angulo $\theta_1$ e $T_2: \mathbb{R}^2 \rightarrow
+				\mathbb{R}^2$ \'e a rota\c{c}\~ao por um \^angulo $\theta_2$.
+			\item $T_1:\mathbb{R}^2 \rightarrow \mathbb{R}^2$ \'e a rota\c{c}\~ao por
+				um \^angulo $\theta$ e $T_2: \mathbb{R}^2 \rightarrow
+				\mathbb{R}^2$ \'e a proje\c{c}\~ao ortogonal sobre o eixo $x$.
+		\end{enumerate}
+
+	\vspace{0.5cm}
+	\item Definimos as proje\c{c}\~oes ortogonais de $\mathbb{R}^3$ sobre os eixos
+		$x$, $y$ e $x$, respectivamente, por
+		\[T_x(x,y,z) = (x,0,0),\ T_y(x,y,z) = (0,y,0)\ e\ T_z(x,y,z) =
+			(0,0,z).\]
+	Mostre que as proje\c{c}\~oes acima s\~ao transforma\c{c}\~oes lineares.
+
+	\vspace{0.5cm}
+	\item Mostre que a reflex\~ao de vetores de $\mathbb{R}^2$ em torno da
+		reta $y=x$ \'e uma transforma\c{c}\~ao linear e encontre sua matriz can\^onica.
+
+	\vspace{0.5cm}
+	\item Mostre que a proje\c{c}\~ao ortogonal de vetores de $\mathbb{R}^2$ sobre a
+		reta $y=x$ \'e uma transforma\c{c}\~ao linear e encontre sua matriz can\^onica.
+
+	\vspace{0.5cm}
+	\item Mostre que os vetores $T(v)$ e $v - T(v)$ s\~ao ortogonais, onde
+		$T:\mathbb{R}^2 \rightarrow \mathbb{R}^2$ \'e uma proje\c{c}\~ao ortogonal
+		sobre os eixos coordenados ou sobre a reta $y=x$.
+\end{enumerate}
+
+\end{document}
