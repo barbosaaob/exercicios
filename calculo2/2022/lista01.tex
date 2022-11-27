@@ -1,0 +1,115 @@
+\documentclass[a4paper,5pt]{amsbook}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{textcomp}
+\usepackage{systeme}
+\usepackage{amssymb}
+\usepackage[]{amsmath}
+\usepackage{subcaption}
+\usepackage[inline]{enumitem}
+\usepackage{gensymb}
+\usepackage[utf8]{inputenc}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\renewcommand{\sin}{\,\mbox{sen}\,}
+\newcommand{\sen}{\,\mbox{sen}\,}
+\newcommand{\tg}{\,\mbox{tg}\,}
+\newcommand{\cosec}{\,\mbox{cosec}\,}
+\newcommand{\cotg}{\,\mbox{cotg}\,}
+\newcommand{\tr}{\,\mbox{tr}\,}
+\newcommand{\ds}{\displaystyle}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setlength{\textwidth}{16cm} \setlength{\topmargin}{-1.3cm}
+\setlength{\textheight}{30cm}
+\setlength{\leftmargin}{1.2cm} \setlength{\rightmargin}{1.2cm}
+\setlength{\oddsidemargin}{0cm}\setlength{\evensidemargin}{0cm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \renewcommand{\baselinestretch}{1.6}
+% \renewcommand{\thefootnote}{\fnsymbol{footnote}}
+% \renewcommand{\theequation}{\thesection.\arabic{equation}}
+% \setlength{\voffset}{-50pt}
+% \numberwithin{equation}{chapter}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\thispagestyle{empty}
+\pagestyle{empty}
+\begin{minipage}[h]{0.14\textwidth}
+    \includegraphics[scale=0.24]{../../ufgd.png}
+\end{minipage}
+\begin{minipage}[h]{\textwidth}
+    \begin{tabular}{c}
+        {{\bf UNIVERSIDADE FEDERAL DA GRANDE DOURADOS}}\\
+        {{\bf C\'{a}lculo Diferencial e Integral II --- Lista 1}}\\
+        {{\bf Prof.\ Adriano Barbosa}}\\
+    \end{tabular}
+    \vspace{-0.45cm}
+    %
+\end{minipage}
+
+%------------------------
+
+\vspace{1cm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   formulario  inicio  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{enumerate}
+    \vspace{0.5cm}
+    \item Dado o termo geral das sequ\^encias abaixo, escreva seus cinco
+    primeiros termos e calcule, caso exista,
+    $\displaystyle\lim_{n\rightarrow\infty}\ x_n$:
+        \begin{enumerate}
+        \setlength\itemsep{0.2cm}
+        \item $x_n = \ds\frac{n^3+3n+1}{4n^3+2}$
+        \item $x_n = \sqrt{n+1}-\sqrt{n}$
+        \item $x_n = \ds\sin\frac{1}{n}$
+        %\item $x_n = \ds\int_1^n \frac{1}{x}\ dx$
+        \item $x_n = \ds{\left(1+\frac{2}{n}\right)}^n$
+        \item $x_n = \ds\sum_{k=0}^n \frac{1}{2^k}$
+        \item $x_n = \ds\frac{\sin n}{n}$
+        \end{enumerate}
+
+    \setlength\itemsep{0.5cm}
+    \item Escreva as cinco primeiras parcelas das s\'eries e calcule, se
+    poss\'{\i}vel, sua soma:
+    	\begin{enumerate}
+            \setlength\itemsep{0.3cm}
+    		\item $\ds\sum_{n=1}^\infty\ds\frac{1}{n(n+1)}$
+    
+                [Dica: verifique que
+                $\frac{1}{n(n+1)}=\frac{1}{n}-\frac{1}{n+1}$]
+    		\item $\ds\sum_{k=0}^\infty \ds\frac{1}{(4k+1)(4k+5)}$
+    
+                [Dica: verifique que $\frac{1}{(4k+1)(4k+5)} =
+                \frac{1}{4}\left(\frac{1}{4k+1} - \frac{1}{4k+5}\right)$]
+    		\item $\ds\sum_{n=1}^\infty\ds\frac{n^2}{3n^2+2}$
+    		\item $\ds\sum_{k=0}^\infty e^{-k}$
+    		%\item $\ds1+\frac{1}{\sqrt[3]{2}}+\frac{1}{\sqrt[3]{3}}+\cdots+\frac{1}{\sqrt[3]{n}}+\cdots$
+    	\end{enumerate}
+    
+    \item Determine se as s\'eries geom\'etricas s\~ao convergentes ou divergentes.
+    Calcule a soma das s\'eries convergentes.
+    	\begin{enumerate}
+            \setlength\itemsep{0.3cm}
+    		\item $\ds4+3+\frac{9}{4}+\frac{27}{16}+\cdots$
+    		\item $\ds2+0,5+0,125+0,03125+\cdots$
+    	\end{enumerate}
+    
+    \item Escreva $3,188888\ldots$ como uma fra\c{c}\~ao utilizando a s\'erie
+        geom\'etrica.
+    
+    \item Calcule a soma das s\'eries
+    	\begin{enumerate}
+            \setlength\itemsep{0.3cm}
+    		\item $\ds\left(\frac{1}{2}+\frac{1}{4}\right)+\left(\frac{1}{2^2}+\frac{1}{4^2}\right)+\left(\frac{1}{2^3}+\frac{1}{4^3}\right)+\cdots$
+    		\item $\ds\sum_{k=1}^\infty \left(\frac{1}{5^k} - \frac{1}{k(k+1)}\right)$
+    	\end{enumerate}
+\end{enumerate}
+\end{document}
