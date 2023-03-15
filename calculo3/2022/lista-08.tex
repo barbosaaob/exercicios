@@ -1,0 +1,94 @@
+\documentclass[a4paper,5pt]{amsbook}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{textcomp}
+\usepackage{systeme}
+\usepackage{amssymb}
+\usepackage[]{amsmath}
+\usepackage{subcaption}
+\usepackage[inline]{enumitem}
+\usepackage{gensymb}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\sen}{\,\mbox{sen}}
+\newcommand{\tg}{\,\mbox{tg}\,}
+\newcommand{\cosec}{\,\mbox{cosec}\,}
+\newcommand{\cotg}{\,\mbox{cotg}\,}
+\newcommand{\tr}{\,\mbox{tr}\,}
+\newcommand{\ds}{\displaystyle}
+\newcommand{\ra}{\rightarrow}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setlength{\textwidth}{16cm} %\setlength{\topmargin}{-1.3cm}
+\setlength{\textheight}{25cm}
+\setlength{\leftmargin}{1.2cm} \setlength{\rightmargin}{1.2cm}
+\setlength{\oddsidemargin}{0cm}\setlength{\evensidemargin}{0cm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \renewcommand{\baselinestretch}{1.6}
+% \renewcommand{\thefootnote}{\fnsymbol{footnote}}
+% \renewcommand{\theequation}{\thesection.\arabic{equation}}
+% \setlength{\voffset}{-50pt}
+% \numberwithin{equation}{chapter}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\thispagestyle{empty}
+\pagestyle{empty}
+\begin{minipage}[h]{0.14\textwidth}
+	\includegraphics[scale=0.24]{../../ufgd.png}
+\end{minipage}
+\begin{minipage}[h]{\textwidth}
+\begin{tabular}{c}
+{{\bf UNIVERSIDADE FEDERAL DA GRANDE DOURADOS}}\\
+{{\bf C\'alculo de V\'arias Vari\'aveis --- Lista 8}}\\
+{{\bf Prof.\ Adriano Barbosa}}\\
+\end{tabular}
+\vspace{-0.45cm}
+%
+\end{minipage}
+
+%------------------------
+
+\vspace{1cm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   formulario  inicio  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{enumerate}
+    \setlength\itemsep{0.5cm}
+    \item Calcule a integral dada, colocando-a em coordenadas polares.
+        \begin{enumerate}
+            \setlength\itemsep{0.3cm}
+            \item $\ds\iint_R \sen{(x^2+y^2)}\ dA$, onde $R$ \'e a regi\~ao do
+            primeiro quadrante entre os c\'{\i}rculos com centro na origem e reios 1
+            e 3.
+            \item $\ds\iint_D e^{-x^2-y^2}\ dA$, onde $D$ \'e a regi\~ao limitada
+            pelo semic\'{\i}rculo $x=\sqrt{4-y^2}$ e o eio $y$.
+            \item $\ds\iint_R \arctan{(y/x)}\ dA$, onde $R=\{(x,y)\ |\ 1\le
+            x^2+y^2\le 4, 0\le y\le x\}$.
+        \end{enumerate}
+
+    \item Utilize coordenadas polares para determinar o volume do s\'olido.
+        \begin{enumerate}
+            \setlength\itemsep{0.3cm}
+            \item Abaixo do cone $z=\sqrt{x^2+y^2}$ e acima do disco
+            $x^2+y^2\le 4$.
+            \item Limitado pelo hiperboloide $-x^2-y^2+z^2=1$ e pelo plano
+            $z=2$.
+        \end{enumerate}
+
+    \item Calcule a integral iterada, convertendo-a antes para coordenadas
+    polares.
+        \begin{enumerate}
+            \setlength\itemsep{0.3cm}
+            \item $\ds\int_{-3}^{3} \int_0^{\sqrt{9-x^2}} \sen{(x^2+y^2)}\ dydx$
+            \item $\ds\int_0^1 \int_y^{\sqrt{2-y^2}} x+y\ dxdy$
+        \end{enumerate}
+\end{enumerate}
+
+\end{document}
