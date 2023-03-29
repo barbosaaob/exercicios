@@ -1,0 +1,103 @@
+\documentclass[a4paper,5pt]{amsbook}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{textcomp}
+\usepackage{systeme}
+\usepackage{amssymb}
+\usepackage[]{amsmath}
+\usepackage{subcaption}
+\usepackage[inline]{enumitem}
+\usepackage{gensymb}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\sen}{\,\mbox{sen}}
+\newcommand{\tg}{\,\mbox{tg}\,}
+\newcommand{\cosec}{\,\mbox{cosec}\,}
+\newcommand{\cotg}{\,\mbox{cotg}\,}
+\newcommand{\tr}{\,\mbox{tr}\,}
+\newcommand{\ds}{\displaystyle}
+\newcommand{\ra}{\rightarrow}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setlength{\textwidth}{16cm} %\setlength{\topmargin}{-1.3cm}
+\setlength{\textheight}{25cm}
+\setlength{\leftmargin}{1.2cm} \setlength{\rightmargin}{1.2cm}
+\setlength{\oddsidemargin}{0cm}\setlength{\evensidemargin}{0cm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \renewcommand{\baselinestretch}{1.6}
+% \renewcommand{\thefootnote}{\fnsymbol{footnote}}
+% \renewcommand{\theequation}{\thesection.\arabic{equation}}
+% \setlength{\voffset}{-50pt}
+% \numberwithin{equation}{chapter}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\thispagestyle{empty}
+\pagestyle{empty}
+\begin{minipage}[h]{0.14\textwidth}
+	\includegraphics[scale=0.24]{../../ufgd.png}
+\end{minipage}
+\begin{minipage}[h]{\textwidth}
+\begin{tabular}{c}
+{{\bf UNIVERSIDADE FEDERAL DA GRANDE DOURADOS}}\\
+{{\bf C\'alculo de V\'arias Vari\'aveis --- Lista 10}}\\
+{{\bf Prof.\ Adriano Barbosa}}\\
+\end{tabular}
+\vspace{-0.45cm}
+%
+\end{minipage}
+
+%------------------------
+
+\vspace{1cm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   formulario  inicio  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{enumerate}
+    \setlength\itemsep{0.5cm}
+    \item Esboce o s\'olido descrito pelas desigualdades dadas.
+        \begin{enumerate}
+            \setlength\itemsep{0.3cm}
+            \item $0\le r\le 2$, $-\pi/2\le \theta\le \pi/2$, $0\le z\le 1$
+            \item $0\le \theta\le \pi/2$, $r\le z\le 2$
+        \end{enumerate}
+
+    \item Esboce o s\'olido cujo volume \'e dade pela integral
+    $\ds\int_{-\pi/2}^{\pi/2} \int_0^2 \int_0^{r^2} r\ dz\ dr\ d\theta$ e
+    calcule-a.
+
+    \item Calcule $\ds\iiint_E \sqrt{x^2+y^2}\ dV$, onde $E$ \'e a regi\~ao que
+    est\'a dentro do cilindro $x^2+y^2=16$ e entre os planos $z=-5$ e $z=4$.
+
+    \item Calcule $\ds\iiint_E x+y+z\ dV$, onde $E$ \'e o s\'olido do primeiro
+    octante que est\'a abaixo do paraboloide $z=4-x^2-y^2$.
+
+    %\item Calcule a integral $\ds\int_{-2}^2
+    %\int_{-\sqrt{4-y^2}}^{\sqrt{4-y^2}} \int_{\sqrt{x^2+y^2}}^2 xz\ dzdxdy$,
+    %transformando para coordenadas cil\'{\i}ndricas.
+
+    \item Esboce o s\'olido descrito pelas desigualdades.
+        \begin{enumerate}
+            \setlength\itemsep{0.3cm}
+            \item $2\le \rho\le 4$, $0\le \phi\le \pi/3$, $0\le \theta\le \pi$
+            \item $\rho\le 1$, $3\pi/4\le \phi\le \pi$
+        \end{enumerate}
+        
+    \item Calcule $\ds\iiint_B (x^2+y^2+z^2)^2\ dV$, onde $B$ \'e a bola com
+    centro na origem e raio 5.
+
+    \item Calcule $\iiint_E x^2+y^2\ dV$, onde $E$ est\'a entre as esferas
+    $x^2+y^2+z^2=4$ e $x^2+y^2+z^2=9$.
+
+    \item Esboce o s\'olido cujo volume \'e dado pela integral $\ds\int_0^{\pi/6}
+    \int_0^{\pi/2} \int_0^3 \rho^2\sen\phi\ d\rho\ d\theta\ d\phi$.
+
+\end{enumerate}
+
+\end{document}
